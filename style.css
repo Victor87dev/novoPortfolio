@@ -106,36 +106,48 @@ margin-top: 60px;
 }
 
 .container h2{
- color: #fff;
- font-family: 'Poppins', sans-serif;
- letter-spacing: 3px;
+color: #fff;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 3px;
 }
 
 .container .text{
- position: relative;
- color: #32e61a;
- font-size: 30px;
- font-weight: 600;
- font-family: 'Belanosima', sans-serif;
+position: relative;
+color: #32e61a;
+font-size: 30px;
+font-weight: 600;
+font-family: 'Belanosima', sans-serif;
 }
 
 .sec-text::before{
- content: "";
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- width: 100%;
- background-color: #1a2b3c;
- border-left: 2px solid #32e61a;
- animation: animate 7s steps(25) infinite;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: #1a2b3c;
+border-left: 2px solid #32e61a;
+animation: animate 7s steps(25) infinite;
 }
 
 section{
-  margin-top: 110px;
-    width: 80%;
-    height: 50%;
-     /* border: 1px solid red;  */
+margin-top: 110px;
+width: 80%;
+height: 50%;
+/* border: 1px solid red;  */
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+} 
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 .box-sobreMim{
