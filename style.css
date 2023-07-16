@@ -324,6 +324,7 @@ text-align: center;
 .text-project-habilidades .habilidades{
   /* border: 1px solid green; */
   padding: 0 130px;
+  color: #32e61a;
 }
 
 .container-project, h4{
