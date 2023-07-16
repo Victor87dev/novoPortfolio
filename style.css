@@ -299,6 +299,7 @@ text-align: center;
   /* border: 1px solid blue;  */
   display: flex;
   flex-direction: row;
+  gap: 70px;
 }
 
 .text-project-habilidades, h4{
@@ -309,18 +310,20 @@ text-align: center;
   color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   
   margin-top: 150px;
   /* border: 1px solid green; */
 }
 
 .text-project-habilidades .projetos{
-  margin-right: 590px;
+  /* border: 1px solid green; */
+  padding: 0 0 0 390px;
 }
 
 .text-project-habilidades .habilidades{
-  margin-right: 200px;
+  /* border: 1px solid green; */
+  padding: 0 130px;
 }
 
 .container-project, h4{
@@ -331,12 +334,12 @@ text-align: center;
 }
 
 .container_project{
-  width: 60%;
-  height: 60%;
+  width: 65%;
+  height: 50%;
   padding: 0 0 450px 0;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* border: 1px solid red;   */
+  border-right: 3px solid #fff; 
   margin-top: 60px;
   text-align: center;
   display: grid;
@@ -702,27 +705,30 @@ text-align: center;
 }
 
 .container-habilidades{
-  width: 40%;
-  height: 35%;
-  border: 1px solid #000;
+  width: 30%;
+  padding: 0 0 100px 0;
+  height: max-content;
+  /* border: 1px solid #000;  */
   margin-top: 80px;
   position: relative;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
   align-items: center;
+  grid-row-gap: 110px;
   grid-column-gap: 80px;
 
 }
 
 .container-habilidades .card_skill{
   position: relative;
-  width: 220px;
-  height: 250px;
-  background: #222;
+  width: 200px;
+  height: 190px;
+  background: #1a2b3c;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid red; */
 }
 
 .container-habilidades .card_skill .percent{
@@ -752,6 +758,17 @@ text-align: center;
   stroke: var(--clr);
   stroke-dasharray: 440;
   stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+  opacity: 1;
+  
+}
+
+.card_skill:hover .percent svg circle:nth-child(2){
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+  opacity: 0;
+  animation: fadeI 1s linear forwards;
+  animation-delay: 2.5s;
 }
 
 .dot{
@@ -759,16 +776,15 @@ text-align: center;
   inset: 5px;
   z-index: 10;
   /* 360deg / 100 = 3.6 */
-  animation: animateDot 2s linear forwards;
+  transform: rotate(calc(3.6deg * var(--num)));
 }
 
-@keyframes animateDot{
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(calc(3.6deg * var(--num)));
-  }
+.card_skill:hover .dot{
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
+  /* 360deg / 100 = 3.6 */
+  animation: animateD 2s linear forwards;
 }
 
 .dot::before{
@@ -792,6 +808,14 @@ text-align: center;
   align-items: center;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
+  opacity: 1;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+.card_skill:hover .number{
+  opacity: 1;
+  animation: animateN 4s linear forwards;
 }
 
 .number h5{
@@ -803,8 +827,19 @@ text-align: center;
   font-size: 2.5em;
 }
 
+.number h5 span{
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.5em;
+}
 
-
+.number .skill{
+  font-weight: 300;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
 
 
 
@@ -845,4 +880,31 @@ text-align: center;
  100%{
   left: 0%;
  }
+}
+
+@keyframes fadeI{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes animateD{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(calc(3.6deg * var(--num)));
+  }
+}
+
+@keyframes animateN{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
