@@ -360,7 +360,7 @@ text-align: center;
 }
 
 .card:hover{
-  background-image: linear-gradient(#0d81af,#0ccddb);
+  background-image: linear-gradient(#1a85af,#0ccddb);
   box-shadow: rgb(0, 225, 255) 0px 1px 12px;
   border: 2px solid #0ccddb;
 }
