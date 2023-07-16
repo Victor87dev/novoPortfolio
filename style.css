@@ -315,7 +315,7 @@ text-align: center;
 }
 
 .text-project-habilidades .projetos{
-  margin-right: 600px;
+  margin-right: 590px;
 }
 
 .text-project-habilidades .habilidades{
@@ -332,17 +332,19 @@ text-align: center;
 .container_project{
   width: 60%;
   height: 60%;
+  padding: 0 0 450px 0;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   /* border: 1px solid red;   */
-  margin-top: 100px;
+  /* border: 1px solid red;   */
+  margin-top: 60px;
   text-align: center;
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 480px 480px;
+  grid-row-gap: 50px;
 }
 
 .card{
-  background-image: linear-gradient(#333,#333);
+  background-image: linear-gradient(#1a2b3d,#1a2b3c);
   overflow: hidden;
   border-radius: 16px;
   max-width: 420px;
@@ -352,14 +354,15 @@ text-align: center;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all .5s;
+  transition: all .15s;
   margin-top: 30px;
-  
+ 
 }
 
 .card:hover{
-  background-image: linear-gradient(#32e61a,#106d04);
-  box-shadow: rgb(0, 255, 21) 0px 1px 12px;
+  background-image: linear-gradient(#0d81af,#0ccddb);
+  box-shadow: rgb(0, 225, 255) 0px 1px 12px;
+  border: 2px solid #0ccddb;
 }
 
 .card .img{
@@ -374,6 +377,8 @@ text-align: center;
   opacity: .8;
   transition: all .5s;
   z-index: 2;
+  border-radius: 10px;
+  
 }
 
 .card:hover .img{
@@ -427,7 +432,7 @@ text-align: center;
 }
 
 .card_2{
-  background-image: linear-gradient(#333,#333);
+  background-image: linear-gradient(#1a2b3d,#1a2b3d);
   overflow: hidden;
   border-radius: 16px;
   max-width: 420px;
@@ -437,14 +442,15 @@ text-align: center;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all .5s;
+  transition: all .15s;
   margin-top: 30px;
-  
+ 
 }
 
 .card_2:hover{
-  background-image: linear-gradient(#32e61a,#106d04);
+  background-image: linear-gradient(#1e9e0d,#20b80c);
   box-shadow: rgb(0, 255, 21) 0px 1px 12px;
+  border: 2px solid #32e61a;
 }
 
 .card_2 .img{
@@ -459,6 +465,7 @@ text-align: center;
   opacity: .8;
   transition: all .5s;
   z-index: 2;
+  border-radius: 10px;
 }
 
 .card_2:hover .img{
@@ -508,6 +515,179 @@ text-align: center;
 }
 
 .card_2:hover .arrow{
+  transform: rotate(0);
+}
+
+.card_3{
+  background-image: linear-gradient(#1a2b3d,#1a2b3d);
+  overflow: hidden;
+  border-radius: 16px;
+  max-width: 420px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .15s;
+  margin-top: 30px;
+}
+
+.card_3:hover{
+  background-image: linear-gradient(#a35210,#e26600);
+  box-shadow: rgb(233, 105, 0) 0px 1px 12px;
+  border: 2px solid #e26600;
+}
+
+.card_3 .img{
+  background-image: url(/img/games3.PNG);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .8;
+  transition: all .5s;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.card_3:hover .img{
+  opacity: 1;
+  width: 600px;
+}
+
+.card_3 .content{
+  padding: 0 20px;
+  overflow: hidden;
+  height: 0;
+  transition: all .5s;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.card_3:hover .content{
+  padding: 20px;
+  height: 300px;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card_3 .content p{
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.card_3 .content .title{
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  letter-spacing: 1.5px;
+}
+
+.card_3 .content .desc{
+  font-size: 15.5px;
+  font-weight: 450;
+  opacity: .7;
+}
+
+.card_3 .arrow{
+  padding: 15px;
+  font-size: 28px;
+  transform: rotate(-180deg);
+  transition: all .5s;
+}
+
+.card_3:hover .arrow{
+  transform: rotate(0);
+}
+
+.card_4{
+  background-image: linear-gradient(#1a2b3d,#1a2b3d);
+  overflow: hidden;
+  border-radius: 16px;
+  max-width: 420px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .15s;
+  margin-top: 30px;
+  
+}
+
+.card_4:hover{
+  background-image: linear-gradient(#a35210,#e26600);
+  box-shadow: rgb(233, 105, 0) 0px 1px 12px;
+  border: 2px solid #e26600;
+}
+
+.card_4 .img{
+  background-image: url(/img/games3.PNG);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .8;
+  transition: all .5s;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.card_4:hover .img{
+  opacity: 1;
+  width: 600px;
+}
+
+.card_4 .content{
+  padding: 0 20px;
+  overflow: hidden;
+  height: 0;
+  transition: all .5s;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.card_4:hover .content{
+  padding: 20px;
+  height: 300px;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card_4 .content p{
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.card_4 .content .title{
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  letter-spacing: 1.5px;
+}
+
+.card_4 .content .desc{
+  font-size: 15.5px;
+  font-weight: 450;
+  opacity: .7;
+}
+
+.card_4 .arrow{
+  padding: 15px;
+  font-size: 28px;
+  transform: rotate(-180deg);
+  transition: all .5s;
+}
+
+.card_4:hover .arrow{
   transform: rotate(0);
 }
 
