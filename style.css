@@ -358,7 +358,6 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: all .15s;
   margin-top: 30px;
  
@@ -428,6 +427,130 @@ text-align: center;
   color: #fff;
 }
 
+.button_card{
+  font-size: 1px;
+  background-color: #1a2b3c;
+  color: #1a2b3c;
+}
+
+.card:hover .button_card{
+position:relative; 
+padding:10px 20px;
+font-size:1rem;
+color:var(--color);
+border: 2px solid rgba(0,0,0,0.5);
+border-radius:4px;
+text-shadow:0 0 15px var(--color);
+text-decoration:none;
+text-transform:uppercase;
+letter-spacing:0.1rem;
+transition:0.5s;
+z-index:1;
+margin-bottom: 20px;
+cursor: pointer;
+}
+
+.card:hover .button_card:hover{
+color:#fff;
+border:2px solid rgba(0,0,0,0,0);
+box-shadow:0 0 0px var(--color);
+}
+
+.card:hover .button_card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:var(--color);
+z-index:-1;
+transform:scale(0);
+transition:0.5s;
+}
+
+.card:hover .button_card:hover::before{
+transform:scale(1);
+transition-delay:0.5s;
+box-shadow: 0 0 10px var(--color), 0 0 30px var(--color), 0 0 60px var(--color);
+}
+
+.card:hover .button_card span{
+position: absolute;
+background: var(--color);
+pointer-events: none;
+border-radius: 2px;
+transition: 0.5s ease-in-out;
+transition-delay: 0.25s;
+}
+
+.card:hover .button_card:hover span{
+opacity: 0;
+transition-delay: 0s;
+}
+
+.card:hover .button_card span:nth-child(1),
+.card:hover .button_card span:nth-child(3){
+width: 4px;
+height: 4px;
+}
+
+.card:hover .button_card span:nth-child(1),
+.card:hover .button_card span:nth-child(3){
+transform: translateX(0);
+}
+
+.card:hover .button_card span:nth-child(2),
+.card:hover .button_card span:nth-child(4){
+width: 4px;
+height: 4px;
+}
+
+.card:hover .button_card:hover span:nth-child(1),
+.card:hover .button_card:hover span:nth-child(3){
+transform: translateX(0);
+}
+
+.card:hover .button_card span:nth-child(1){
+top: calc(50% - 2px);
+left: -20px;
+transform-origin: left;
+}
+
+.card:hover .button_card:hover span:nth-child(1){
+left: 50%;
+}
+
+.card:hover .button_card span:nth-child(3){
+top: calc(50% - 2px);
+right: -20px;
+transform-origin: right;
+}
+
+.card:hover .button_card:hover span:nth-child(3){
+right: 50%;
+}
+
+.card:hover .button_card span:nth-child(2){
+left: calc(50% - 2px);
+top: -20px;
+transform-origin: top;
+}
+
+.card:hover .button_card:hover span:nth-child(2){
+top: 50%;
+}
+
+.card:hover .button_card span:nth-child(4){
+left: calc(50% - 2px);
+bottom: -20px;
+transform-origin:  bottom;
+}
+
+.card:hover .button_card:hover span:nth-child(4){
+bottom: 50%;
+}
+
 .card .arrow{
   padding: 15px;
   font-size: 28px;
@@ -449,7 +572,6 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: all .15s;
   margin-top: 30px;
  
@@ -517,6 +639,21 @@ text-align: center;
   font-family: 'Poppins', sans-serif;
 }
 
+.card_2:hover .buttonCard2{
+  position:relative; 
+  padding:16px 30px;
+  font-size:1.5rem;
+  color:var(--color);
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius:4px;
+  text-shadow:0 0 15px var(--color);
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:0.1rem;
+  transition:0.5s;
+  z-index:1;
+}
+
 .card_2 .arrow{
   padding: 15px;
   font-size: 28px;
@@ -538,7 +675,6 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: all .15s;
   margin-top: 30px;
 }
@@ -626,7 +762,6 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: all .15s;
   margin-top: 30px;
   
@@ -729,14 +864,12 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 .container-habilidades .card_skill .percent{
   position: relative;
   width: 150px;
   height: 150px;
-  
 }
 
 .container-habilidades .card_skill .percent svg{
