@@ -1,3 +1,46 @@
+const card3 = document.getElementById('card_3')
+const card4 = document.getElementById('card_4')
+const botaoMostrar = document.getElementById('btn_mostrar')
+
+card4.addEventListener('mouseover', ()=>{
+  botaoMostrar.classList.add('class','some')
+})
+
+card4.addEventListener('mouseout', ()=>{
+  botaoMostrar.classList.remove('class','some')
+})
+
+card3.addEventListener('mouseover', ()=>{
+  botaoMostrar.classList.add('class','some')
+})
+
+card3.addEventListener('mouseout', ()=>{
+  botaoMostrar.classList.remove('class','some')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.addEventListener('scroll', reveal);
 
 function reveal(){

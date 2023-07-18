@@ -297,6 +297,7 @@ text-align: center;
   height: 100%;
   display: flex;
   flex-direction: column;
+  /* border: 1px solid red; */
 }
 
 .projects_habilidades{
@@ -343,7 +344,7 @@ text-align: center;
 .container_project{
   width: 65%;
   height: 50%;
-  padding: 0 0 450px 0;
+  padding: 0 0 1200px 0;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-right: 3px solid #fff; 
@@ -351,7 +352,6 @@ text-align: center;
   text-align: center;
   display: grid;
   grid-template-columns: 480px 480px;
-  grid-row-gap: 50px;
 }
 
 .card{
@@ -1327,6 +1327,33 @@ bottom: 50%;
   text-transform: uppercase;
   color: rgba(255,255,255,0.75);
 }
+
+.box_mostrar{
+  width: 190%;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+
+}
+
+.btn_mostrar{
+  color: #000;
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.some{
+  display: none !important;
+}
+
+
+
+
 
 
 
