@@ -302,12 +302,19 @@ text-align: center;
 
 .projects_habilidades{
   width: 100%;
-  height: 100%;
-  /* border: 1px solid blue;  */
+  height: 50%;
+   border: 1px solid blue; 
   display: flex;
   flex-direction: row;
   gap: 70px;
 }
+
+/*
+antes: projects_habilidades heigth: 50%
+antes: container_project heigth: 90%, padding: 0 0 400px 0
+depois: projects_habilidades heigth: 50%
+depois: container_project heigth: 90%, padding: 0 0 1300px 0
+*/
 
 .text-project-habilidades, h4{
   letter-spacing: 3px;
@@ -343,11 +350,11 @@ text-align: center;
 
 .container_project{
   width: 65%;
-  height: 50%;
-  padding: 0 0 1200px 0;
+  height: 90%;
+  padding: 0 0 400px 0;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-right: 3px solid #fff; 
+  border: 3px solid #fff; 
   margin-top: 60px;
   text-align: center;
   display: grid;
@@ -1214,7 +1221,7 @@ bottom: 50%;
 }
 
 .card_5 .img{
-  background-image: url(/img/bolas.PNG);
+  background-image: url(/img/contador2.PNG);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -1537,7 +1544,7 @@ bottom: 50%;
 
 .box_mostrar{
   width: 190%;
-  border: 1px solid green;
+   border: 1px solid green;
   display: flex;
   justify-content: center;
 }
@@ -1555,6 +1562,10 @@ bottom: 50%;
 
 .some{
   display: none !important;
+}
+
+.modificar_container{
+  padding: 0 0 1300px 0 !important;
 }
 
 
