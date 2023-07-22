@@ -10,7 +10,6 @@ clickBotaoMostrar = ()=>{
   const boxBotaoMostrar = document.getElementById('box_mostrar')
   console.log("entr")
   
-  boxBotaoMostrar.classList.add("class","aaaa")
   boxBotaoMostrar.classList.add("class","some")
   
   containerProject.classList.add("class","modificar_container")
@@ -19,11 +18,6 @@ clickBotaoMostrar = ()=>{
   botaoMostrarMenos()
 }
 
-
-
-
-
-
 const botaoMostrarMenos = ()=> {
   const boxBotao = document.createElement("div")
   boxBotao.setAttribute("class","box_mostrar_menos")
@@ -31,6 +25,7 @@ const botaoMostrarMenos = ()=> {
   const botaoMenos = document.createElement("button")
   botaoMenos.setAttribute("type","button")
   botaoMenos.setAttribute("class","btn_mostrar_menos")
+  botaoMenos.classList.add("class","top-fill-2")
   botaoMenos.setAttribute("id","btn_menos")
   botaoMenos.setAttribute("onclick","clickBotaoMenos()")
   botaoMenos.innerHTML = "Mostrar Menos"
@@ -51,10 +46,8 @@ const clickBotaoMenos = ()=>{
   containerProject.removeChild(card7)
   containerProject.removeChild(card8)
   containerProject.removeChild(boxBotao)
-  boxBotaoMostrar.classList.remove("class","aaaa")
   boxBotaoMostrar.classList.remove("class","some")
   containerProject.classList.remove("class","modificar_container")
- 
 
 }
 
