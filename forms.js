@@ -19,35 +19,7 @@ clickBotaoMostrar = ()=>{
   botaoMostrarMenos()
 }
 
-function card4Mouseover(){
-  
-    boxBotaoMostrar.classList.add("class","aaaa")
-    boxBotaoMostrar.classList.add("class","some")
-  
-  
-  console.log("inferno")
-}
 
-function card4Mouseout(){
-  
-    boxBotaoMostrar.classList.remove('class','aaaa')
-    boxBotaoMostrar.classList.remove("class","some")
-  
-}
-
-function card3Mouseover(){
-  
-    boxBotaoMostrar.classList.add("class","aaaa")
-    boxBotaoMostrar.classList.add("class","some")
-  
-}
-
-function card3Mouseout (){
-  
-    boxBotaoMostrar.classList.remove('class','aaaa')
-    boxBotaoMostrar.classList.remove("class","some")
-  
-}
 
 
 
@@ -64,25 +36,6 @@ const botaoMostrarMenos = ()=> {
   botaoMenos.innerHTML = "Mostrar Menos"
   boxBotao.appendChild(botaoMenos)
   containerProject.appendChild(boxBotao)
-  const card7 = document.getElementById('card_7')
-  const card8 = document.getElementById('card_8')
-  card7.addEventListener('mouseover', ()=>{
-    boxBotao.classList.add('class','some')
-  })
-  
-  card7.addEventListener('mouseout', ()=>{
-    boxBotao.classList.remove('class','some')
-  })
-  
-  card8.addEventListener('mouseover', ()=>{
-    boxBotao.classList.add('class','some')
-  })
-  
-  card8.addEventListener('mouseout', ()=>{
-   
-    boxBotao.classList.remove('class','some')
-    
-  })
   
 }
 
@@ -203,8 +156,6 @@ function reveal(){
     }
   }
 }
-
-
 
 
 
