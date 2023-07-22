@@ -8,6 +8,7 @@ padding: 0px;
 margin: 0px;
 box-sizing: border-box;
 border: none;
+scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar{
@@ -168,6 +169,9 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
+/* border: 1px solid red; */
+margin-top: 50px;
+padding: 100px 0;
 }
 
 .sobreMim{
@@ -307,7 +311,8 @@ text-align: center;
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
+   /* border: 1px solid red; */
+   margin-top: 120px;
 }
 
 .projects_habilidades{
@@ -1231,7 +1236,7 @@ bottom: 50%;
 }
 
 .card_5 .img{
-  background-image: url(/img/imcNovo.PNG);
+  background-image: url(/img/calculadora.PNG);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -1438,7 +1443,7 @@ bottom: 50%;
 }
 
 .card_6 .img{
-  background-image: url(/img/contador2.PNG);
+  background-image: url(/img/contratos.PNG);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -1645,7 +1650,7 @@ bottom: 50%;
 }
 
 .card_7 .img{
-  background-image: url(/img/contador2.PNG);
+  background-image: url(/img/cyberCarros.PNG);
   background-position: center;
   background-size: cover;
   width: 100%;
