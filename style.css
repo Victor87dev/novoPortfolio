@@ -2163,6 +2163,14 @@ bottom: 50%;
   color: rgba(255,255,255,0.75);
 }
 
+.some{
+  display: none !important;
+}
+
+.aaaa{
+  display: none !important;
+}
+
 .box_mostrar{
   width: 190%;
    border: 1px solid green;
@@ -2181,9 +2189,24 @@ bottom: 50%;
   cursor: pointer;
 }
 
-.some{
-  display: none !important;
+.box_mostrar_menos{
+  width: 190%;
+   border: 1px solid green;
+  display: flex;
+  justify-content: center;
 }
+
+.btn_mostrar_menos{
+  color: #000;
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
 
 .modificar_container{
   padding: 0 0 1300px 0 !important;

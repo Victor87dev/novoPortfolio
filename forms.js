@@ -5,55 +5,65 @@ const card4 = document.getElementById('card_4')
 const botaoMostrar = document.getElementById('btn_mostrar')
 const boxBotaoMostrar = document.getElementById('box_mostrar')
 
-let verificarBotaoMostrar = false
 
-
-
-card4.addEventListener('mouseover', ()=>{
-  boxBotaoMostrar.classList.add('class','some')
-})
-
-card4.addEventListener('mouseout', ()=>{
-  if(!verificarBotaoMostrar){
-    boxBotaoMostrar.classList.remove('class','some')
-  }
-})
-
-card3.addEventListener('mouseover', ()=>{
-  boxBotaoMostrar.classList.add('class','some')
-})
-
-card3.addEventListener('mouseout', ()=>{
-  if(!verificarBotaoMostrar){
-    boxBotaoMostrar.classList.remove('class','some')
-  }
-})
-
-const clickBotaoMostrar = ()=>{
+clickBotaoMostrar = ()=>{
   const boxBotaoMostrar = document.getElementById('box_mostrar')
-  console.log("entrei")
-  verificarBotaoMostrar = true
+  console.log("entr")
+  
+  boxBotaoMostrar.classList.add("class","aaaa")
   boxBotaoMostrar.classList.add("class","some")
+  
   containerProject.classList.add("class","modificar_container")
+
   criarCards(arrayProjects)
   botaoMostrarMenos()
 }
 
+function card4Mouseover(){
+  
+    boxBotaoMostrar.classList.add("class","aaaa")
+    boxBotaoMostrar.classList.add("class","some")
+  
+  
+  console.log("inferno")
+}
+
+function card4Mouseout(){
+  
+    boxBotaoMostrar.classList.remove('class','aaaa')
+    boxBotaoMostrar.classList.remove("class","some")
+  
+}
+
+function card3Mouseover(){
+  
+    boxBotaoMostrar.classList.add("class","aaaa")
+    boxBotaoMostrar.classList.add("class","some")
+  
+}
+
+function card3Mouseout (){
+  
+    boxBotaoMostrar.classList.remove('class','aaaa')
+    boxBotaoMostrar.classList.remove("class","some")
+  
+}
+
+
+
 
 const botaoMostrarMenos = ()=> {
   const boxBotao = document.createElement("div")
-  boxBotao.setAttribute("class","box_mostrar")
+  boxBotao.setAttribute("class","box_mostrar_menos")
   boxBotao.setAttribute("id","box_menos")
   const botaoMenos = document.createElement("button")
   botaoMenos.setAttribute("type","button")
-  botaoMenos.setAttribute("class","btn_mostrar")
+  botaoMenos.setAttribute("class","btn_mostrar_menos")
   botaoMenos.setAttribute("id","btn_menos")
   botaoMenos.setAttribute("onclick","clickBotaoMenos()")
   botaoMenos.innerHTML = "Mostrar Menos"
   boxBotao.appendChild(botaoMenos)
   containerProject.appendChild(boxBotao)
-  const card5 = document.getElementById("card_5")
-  const card6 = document.getElementById("card_6")
   const card7 = document.getElementById('card_7')
   const card8 = document.getElementById('card_8')
   card7.addEventListener('mouseover', ()=>{
@@ -88,9 +98,11 @@ const clickBotaoMenos = ()=>{
   containerProject.removeChild(card7)
   containerProject.removeChild(card8)
   containerProject.removeChild(boxBotao)
+  boxBotaoMostrar.classList.remove("class","aaaa")
   boxBotaoMostrar.classList.remove("class","some")
   containerProject.classList.remove("class","modificar_container")
-  verificarBotaoMostrar = false
+ 
+
 }
 
 
