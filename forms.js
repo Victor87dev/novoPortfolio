@@ -12,7 +12,7 @@ clickBotaoMostrar = ()=>{
   
   boxBotaoMostrar.classList.add("class","some")
   
-  containerProject.classList.add("class","modificar_container")
+ 
 
   criarCards(arrayProjects)
   botaoMostrarMenos()
@@ -47,7 +47,6 @@ const clickBotaoMenos = ()=>{
   containerProject.removeChild(card8)
   containerProject.removeChild(boxBotao)
   boxBotaoMostrar.classList.remove("class","some")
-  containerProject.classList.remove("class","modificar_container")
 
 }
 
