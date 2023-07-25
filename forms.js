@@ -1,7 +1,7 @@
 const containerProject = document.getElementById('container_project')
 const card3 = document.getElementById('card_3')
 const card4 = document.getElementById('card_4')
-
+var btn = document.getElementById("btn_email")
 const botaoMostrar = document.getElementById('btn_mostrar')
 const boxBotaoMostrar = document.getElementById('box_mostrar')
 
@@ -113,6 +113,54 @@ const criarCards = (arrayProjects) =>{
 
 }
 
+btn.addEventListener('click', function(e){
+  e.preventDefault()
+  var name = document.getElementById('name').value 
+  var email = document.getElementById('email').value
+  var subject = document.getElementById('subject').value
+  var message = document.getElementById('message').value
+  var body = 'name: ' + name + '<br/> email: ' + email + '<br/> subject: ' + subject +
+  '<br/> message: ' + message
+
+  function checkInputs() {
+    if (name === '') {
+      alert('O nome de usuário é obrigatório.')
+      return
+    } else if (email === '') {
+      alert('O endereço de email é obrigatório.')
+      return
+    }else if (!checkEmail(email)) {
+      alert('Por favor, insira um email válido.')
+      return
+    }else if (subject === '') {
+      alert('O assunto do email é obrigatório.')
+      return
+    } else if (message === '') {
+      alert('A mensagem do email é obrigatório.')
+      return
+    } else {
+      return true
+    }
+
+    function checkEmail(email) {
+      return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+        email
+      )
+    }
+  }
+
+  if(checkInputs()){
+
+  
+  Email.send({
+      SecureToken : "94b1e023-fd3f-43e9-8e2e-403698012df6",
+      To : 'devsjoaovvictor@gmail.com',
+      From : "devsjoaovvictor@gmail.com",
+      Subject : "contact message",
+      Body : body
+  }).then(message => alert('Email enviado com sucesso'))
+}
+})
 
 
 

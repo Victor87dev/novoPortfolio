@@ -255,7 +255,15 @@
         <p class="text_contato">Entre em contato!</p>
         <div class="contatos_redes">
           <div class="box_email">
-
+            <div class="form"> 
+              <form method="post">
+                <input type="text" placeholder="Name" id="name" autocomplete="off" required>
+                <input type="email" placeholder="Email" id="email" autocomplete="off" required>
+                <input type="text" placeholder="Subject" id="subject" autocomplete="off" required>
+                <textarea id="message" placeholder="Message" cols="30" rows="10" required></textarea>
+                <button id="btn_email">Send</button>
+              </form>
+            </div>
           </div>
 
           <div class="box_redes">
@@ -267,6 +275,8 @@
 
   </main>
   
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
   <script src="/forms.js"></script>
 </body>
 </html>
