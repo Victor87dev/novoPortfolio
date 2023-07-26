@@ -8,12 +8,7 @@ const boxBotaoMostrar = document.getElementById('box_mostrar')
 
 clickBotaoMostrar = ()=>{
   const boxBotaoMostrar = document.getElementById('box_mostrar')
-  console.log("entr")
-  
   boxBotaoMostrar.classList.add("class","some")
-  
- 
-
   criarCards(arrayProjects)
   botaoMostrarMenos()
 }
@@ -31,7 +26,6 @@ const botaoMostrarMenos = ()=> {
   botaoMenos.innerHTML = "Mostrar Menos"
   boxBotao.appendChild(botaoMenos)
   containerProject.appendChild(boxBotao)
-  
 }
 
 const clickBotaoMenos = ()=>{
@@ -81,9 +75,6 @@ const arrayProjects = [
 
 
 const criarCards = (arrayProjects) =>{
-
-   
-
   for(let i = 0; i < arrayProjects.length; i++){
   containerProject.innerHTML += `
 <div class="card_${arrayProjects[i].id}" id="card_${arrayProjects[i].id}">
