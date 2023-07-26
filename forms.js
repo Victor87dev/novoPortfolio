@@ -119,8 +119,8 @@ btn.addEventListener('click', function(e){
   var email = document.getElementById('email').value
   var subject = document.getElementById('subject').value
   var message = document.getElementById('message').value
-  var body = 'name: ' + name + '<br/> email: ' + email + '<br/> subject: ' + subject +
-  '<br/> message: ' + message
+  var body = 'Nome: ' + name + '<br/> Email: ' + email + '<br/> Assunto: ' + subject +
+  '<br/> Mensagem: ' + message
 
   function checkInputs() {
     if (name === '') {
@@ -162,6 +162,12 @@ btn.addEventListener('click', function(e){
 }
 })
 
+
+let label = document.querySelectorAll('label').
+forEach(label => {
+ label.innerHTML = label.innerText.split('').map
+ ((letters, i) => `<span style="transition-delay: ${i * 50}ms">${letters}</span>`).join('');
+});
 
 
 

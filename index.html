@@ -258,12 +258,26 @@
             <div class="form"> 
               <form method="post">
                 <div class="box_flex_email">
-                  <input type="text" placeholder="Name" id="name" autocomplete="off" required>
-                  <input type="email" placeholder="Email" id="email" autocomplete="off" required>
+                  <div class="inputBox">
+                    <input type="text" id="name" autocomplete="off" required>
+                    <label class="labelNome">Nome</label>
+                  </div>
+                  <div class="inputBox">
+                    <input type="email" id="email" autocomplete="off" required>
+                    <label class="labelEmail">Email</label>
+                  </div>
                 </div> 
-                <input type="text" placeholder="Subject" id="subject" autocomplete="off" required>
-                <textarea id="message" placeholder="Message" cols="30" rows="15" required></textarea>
+                <div class="inputBox">
+                  <input type="text" id="subject" autocomplete="off" required>
+                  <label>Assunto</label>
+                </div>
+                <div class="inputBox2">
+                  <textarea id="message" cols="30" rows="15" required></textarea>
+                  <label>Mensagem</label>
+                </div>
                 <button id="btn_email">Send</button>
+
+                
               </form>
             </div>
           </div>

@@ -2268,7 +2268,7 @@ bottom: 50%;
 .box_contatos{
   border: 1px solid orange;
   width: 100%;
-  height: 20%;
+  height: 25%;
   margin-top: 200px;
   text-align: center;
 }
@@ -2282,6 +2282,7 @@ bottom: 50%;
   font-size: 27px;
   margin-top: 12px;
   color: #32e61a;
+  letter-spacing: 4px;
 }
 
 .text_interesse, .text_contato{
@@ -2291,7 +2292,7 @@ bottom: 50%;
 .contatos_redes{
   display: flex;
   width: 100%;
-  height: 85%;
+  height: 89%;
    border: 1px solid pink; 
 }
 
@@ -2312,42 +2313,105 @@ bottom: 50%;
 
 /* form */
 
-.form{
+form{
+  position: relative;
   width: 630px;
   padding: 6px;
 }
 
+.inputBox{
+  position: relative;
+  width: 100%;
+}
+
+.inputBox input{
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 25px;
+}
+
+.inputBox label{
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  color: #999;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+.inputBox label span{
+  position: relative;
+  display: inline-flex;
+  letter-spacing: 0.05em;
+  transition: 0.2s ease-in-out;
+}
+
+.inputBox input:focus ~ label span,
+.inputBox input:valid ~ label span{
+  color: #32e61a;
+  letter-spacing: 0.15em;
+  transform: translateY(-25px);
+}
+
+.inputBox input:focus,
+.inputBox input:valid{
+  border-bottom: 2px solid #32e61a;
+}
+
+.inputBox2{
+  position: relative;
+  width: 100%;
+}
+
+.inputBox2 textarea{
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.inputBox2 label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  color: #999;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+.inputBox2 label span{
+  position: relative;
+  display: inline-flex;
+  letter-spacing: 0.05em;
+  transition: 0.2s ease-in-out;
+}
+
+.inputBox2 textarea:focus ~ label span,
+.inputBox2 textarea:valid ~ label span{
+  color: #32e61a;
+  letter-spacing: 0.15em;
+  transform: translateY(-25px);
+}
+
+.inputBox2 textarea:focus,
+.inputBox2 textarea:valid{
+  border-bottom: 2px solid #32e61a;
+}
+
 input, textarea{
-  background: #1a2b3c;
+  background: transparent;
   width: 100%;
   padding: 12px;
   outline: none;
   border: none;
   margin: 14px 0px;
   color: #fff;
+  resize: none;
 }
-
-input{
-  border-bottom: 1px solid #32e61a;
-  border-right: 1px solid #32e61a;
-}
-
-textarea{
-  
-  border-bottom: 1px solid #32e61a;
-  border-right: 1px solid #32e61a;
-}
-
-input::placeholder {
-  color: #bebebe;
-  font-family: 'Poppins', sans-serif;
-}
-
-textarea::placeholder {
-  color: #bebebe;
-  font-family: 'Poppins', sans-serif;
-}
-
 
 
 #btn_email{
@@ -2360,6 +2424,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  margin-bottom: -10px;
 }
 
 
