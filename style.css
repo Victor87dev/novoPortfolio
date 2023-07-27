@@ -2469,7 +2469,7 @@ input, textarea{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .box_email_location i{
@@ -2495,7 +2495,7 @@ input, textarea{
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .box_redes_sociais i{
@@ -2516,6 +2516,101 @@ input, textarea{
   flex-direction: column;
   gap: 10px;
 }
+
+.icons_box{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icons_box i {
+  color: #fff;
+}
+
+a:hover i{
+  color: #000;
+}
+
+li:nth-child(2) a:hover i{
+  color: #fff;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li{
+  list-style: none;
+  margin: 0 5px;
+}
+
+ul li a{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ text-decoration: none;
+ font-size: 30px;
+ transition: 0.5s;
+}
+
+
+
+ul li a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s cubic-bezier(.95,.32,.37,1.31);
+}
+
+ul li a:hover::before{
+  transform: scale(1);
+}
+
+ul li:nth-child(1) a:hover::before{
+  background: #3b5999;
+}
+
+ul li:nth-child(2) a:hover::before{
+  background: #000;
+}
+
+ul li:nth-child(3) a:hover::before{
+  background-image: linear-gradient(to top, rgb(148, 0, 148),rgb(179, 0, 179), rgb(255, 0, 221))
+}
+
+ul li:nth-child(4) a:hover::before{
+  background: #00fd15;
+}
+
+.box_aguardo_contato h6{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.box_aguardo_contato span{
+  color: #32e61a;
+}
+
+
+
+
+
+
+
 
 
 footer{
