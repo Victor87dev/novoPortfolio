@@ -70,7 +70,7 @@ const arrayProjects = [
     title: "aaaaa",
     description: "bbbbb",
     deploy_url: "https://projeto-shopgames-sombri.netlify.app/"
-  }
+  },
 ]
 
 
@@ -140,9 +140,9 @@ btn.addEventListener('click', function(e){
     }
   }
 
-  if(checkInputs()){
 
-  
+
+  if(checkInputs()){
   Email.send({
       SecureToken : "94b1e023-fd3f-43e9-8e2e-403698012df6",
       To : 'devsjoaovvictor@gmail.com',
