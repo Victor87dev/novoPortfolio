@@ -131,42 +131,20 @@ btn.addEventListener('click', function(e){
       name.setAttribute("class","error")
       labelNome.classList.add("class","errorLetras")
       inputBoxNome.classList.add("class","inputNomeRed")
-      const pNome = document.createElement("p")
-      pNome.setAttribute("id","pNomeErro")
-      pNome.setAttribute("class","errorLetrasP")
-      pNome.innerHTML = "Adicione um nome"
-      inputBoxNome.appendChild(pNome)
-      labelNome.classList.add("class","recolocacaoLetras")
-      labelEmail.classList.add("class","recolocacaoLetras")
     }else{
-     const pNome = document.getElementById("pNomeErro")
      name.removeAttribute("class","error")
-     labelEmail.classList.remove("class","recolocacaoLetras")
-     labelNome.classList.remove("class","recolocacaoLetras")
      labelNome.classList.remove("class","errorLetras")
      inputBoxNome.classList.remove("class","inputNomeRed")
-     inputBoxNome.removeChild(pNome)
     }
 
     if (email.value === '' || !checkEmail(email.value)) {
       email.setAttribute("class","error")
       labelEmail.classList.add("class","errorLetras")
       inputBoxEmail.classList.add("class","inputNomeRed")
-      const pEmail = document.createElement("p")
-      pEmail.setAttribute("id","pEmailErro")
-      pEmail.setAttribute("class","errorLetrasP")
-      pEmail.innerHTML = "Adicione um email"
-      inputBoxEmail.appendChild(pEmail)
-      labelNome.classList.add("class","recolocacaoLetras")
-      labelEmail.classList.add("class","recolocacaoLetras")
     }else{
-      const pEmail = document.getElementById("pEmailErro")
       email.removeAttribute("class","error")
-      labelEmail.classList.remove("class","recolocacaoLetras")
-      labelNome.classList.remove("class","recolocacaoLetras")
       labelEmail.classList.remove("class","errorLetras")
       inputBoxEmail.classList.remove("class","inputNomeRed") 
-      inputBoxEmail.removeChild(pEmail)
     }
 
     if(subject.value === ''){
