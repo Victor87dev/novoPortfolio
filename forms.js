@@ -118,6 +118,8 @@ btn.addEventListener('click', function(e){
   var inputBoxAssunto = document.getElementById("inputBoxAssunto")
   var labelMensagem = document.getElementById("labelMensagem")
   var inputBoxMensagem = document.getElementById("inputBoxMensagem")
+  var boxEmail = document.getElementById("box_email")
+  var boxForm = document.getElementById("box_form")
   var body = 'Nome: ' + name.value + '<br/> Email: ' + email.value + '<br/> Assunto: ' + subject.value +
   '<br/> Mensagem: ' + message.value
  
@@ -186,10 +188,37 @@ btn.addEventListener('click', function(e){
       email.value = ''
       subject.value = ''
       message.value = ''
+      boxForm.classList.add("class","someP")
+      const boxEmailEnviado = document.createElement("div")
+      boxEmailEnviado.setAttribute("class","email_enviado")
+      boxEmailEnviado.setAttribute("id","email_enviado")
+      const pEmailEnviado = document.createElement("p")
+      pEmailEnviado.setAttribute("class","text_email_enviado")
+      pEmailEnviado.innerHTML = "Email enviado com sucesso!"
+      const buttonVoltar = document.createElement("button")
+      buttonVoltar.setAttribute("type","button")
+      buttonVoltar.setAttribute("class","button_email_enviado")
+      buttonVoltar.setAttribute("id","button_email_enviado")
+      buttonVoltar.setAttribute("onclick","teste")
+      buttonVoltar.innerHTML = "Voltar"
+      boxEmailEnviado.appendChild(pEmailEnviado)
+      boxEmailEnviado.appendChild(buttonVoltar)
+      boxEmail.appendChild(boxEmailEnviado)
+      buttonVoltar.addEventListener('click',()=>{
+        boxEmail.removeChild(boxEmailEnviado)
+        boxForm.classList.remove("class","someP")
+      })
+  /*
+  <div class="email_enviado" id="email_enviado">
+     <p class="text_email_enviado">Email enviado com sucesso!</p>
+     <button type="button" class="button_email_enviado" id="button_email_enviado">Voltar</button>
+  </div>
+  */
     }
     return true
   }
   
+    
 
     function checkEmail(email) {
       return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
@@ -207,7 +236,7 @@ btn.addEventListener('click', function(e){
       From : "devsjoaovvictor@gmail.com",
       Subject : "contact message",
       Body : body
-  }).then(message => alert('Email enviado com sucesso'))
+  }).then(message => console.log("enviado"))
 }
 })
 
