@@ -2683,16 +2683,40 @@ footer h6{
 .button_email_enviado{
   padding: 10px 50px;
   font-family: 'Poppins', sans-serif;
+  border: 2px rgba(109, 238, 49, 0.494) solid;
+  position: relative;
+  color: rgba(109, 238, 49, 0.494);
   background: transparent;
-  border: 2px solid #32e61a;
-  color: #fff;
-  font-weight: 400;
-  font-size: 14px;
-  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
   margin-top: 20px;
+  cursor: pointer;
 }
 
+.button_email_enviado::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s ease-in;
+}
 
+.button_email_enviado:hover:before {
+  border-left: 2px #32e61a solid;
+  border-right: 2px #32e61a solid;
+  width: 99%;
+  box-shadow: 0px 5px 25px 1px #32e61a;
+
+}
+
+.button_email_enviado:hover {
+  color: #32e61a;
+  border: 2px #32e61a solid;
+}
 
 
 
