@@ -259,22 +259,22 @@
             <div class="form"> 
               <form method="post">
                 <div class="box_flex_email">
-                  <div class="inputBox">
+                  <div class="inputBox" id="inputBoxNome">
                     <input type="text" id="name" autocomplete="off" required>
-                    <label class="labelNome">Nome</label>
+                    <label class="labelNome" id="labelNome">Nome</label>
                   </div>
-                  <div class="inputBox">
+                  <div class="inputBox" id="inputBoxEmail">
                     <input type="text" id="email" autocomplete="off" required>
-                    <label class="labelEmail">Email</label>
+                    <label class="labelEmail" id="labelEmail">Email</label>
                   </div>
                 </div> 
-                <div class="inputBox">
+                <div class="inputBox" id="inputBoxAssunto">
                   <input type="text" id="subject" autocomplete="off" required>
-                  <label>Assunto</label>
+                  <label class="labelAssunto" id="labelAssunto">Assunto</label>
                 </div>
-                <div class="inputBox2">
+                <div class="inputBox2" id="inputBoxMensagem">
                   <textarea id="message" cols="30" rows="15" required></textarea>
-                  <label>Mensagem</label>
+                  <label class="labelMensagem" id="labelMensagem">Mensagem</label>
                 </div>
                 <button id="btn_email">Enviar email</button>
 

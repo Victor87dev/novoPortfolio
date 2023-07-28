@@ -106,32 +106,112 @@ const criarCards = (arrayProjects) =>{
 
 btn.addEventListener('click', function(e){
   e.preventDefault()
-  var name = document.getElementById('name').value 
-  var email = document.getElementById('email').value
-  var subject = document.getElementById('subject').value
-  var message = document.getElementById('message').value
-  var body = 'Nome: ' + name + '<br/> Email: ' + email + '<br/> Assunto: ' + subject +
-  '<br/> Mensagem: ' + message
+  var name = document.getElementById('name')
+  var email = document.getElementById('email')
+  var subject = document.getElementById('subject')
+  var message = document.getElementById('message')
+  var labelNome = document.getElementById("labelNome")
+  var inputBoxNome = document.getElementById("inputBoxNome")
+  var labelEmail = document.getElementById("labelEmail")
+  var inputBoxEmail = document.getElementById("inputBoxEmail")
+  var labelAssunto = document.getElementById("labelAssunto")
+  var inputBoxAssunto = document.getElementById("inputBoxAssunto")
+  var labelMensagem = document.getElementById("labelMensagem")
+  var inputBoxMensagem = document.getElementById("inputBoxMensagem")
+  var body = 'Nome: ' + name.value + '<br/> Email: ' + email.value + '<br/> Assunto: ' + subject.value +
+  '<br/> Mensagem: ' + message.value
+ 
+
 
   function checkInputs() {
-    if (name === '') {
-      alert('O nome de usuário é obrigatório.')
-      return
-    } else if (email === '') {
-      alert('O endereço de email é obrigatório.')
-      return
-    }else if (!checkEmail(email)) {
-      alert('Por favor, insira um email válido.')
-      return
-    }else if (subject === '') {
-      alert('O assunto do email é obrigatório.')
-      return
-    } else if (message === '') {
-      alert('A mensagem do email é obrigatório.')
-      return
-    } else {
-      return true
+  if(name.value === '' || email.value === '' || !checkEmail(email.value) || subject.value === '' || message.value === ''){
+
+  
+    if (name.value === '') {
+      name.setAttribute("class","error")
+      labelNome.classList.add("class","errorLetras")
+      inputBoxNome.classList.add("class","inputNomeRed")
+      const pNome = document.createElement("p")
+      pNome.setAttribute("id","pNomeErro")
+      pNome.setAttribute("class","errorLetrasP")
+      pNome.innerHTML = "Adicione um nome"
+      inputBoxNome.appendChild(pNome)
+      labelNome.classList.add("class","recolocacaoLetras")
+      labelEmail.classList.add("class","recolocacaoLetras")
+    }else{
+     const pNome = document.getElementById("pNomeErro")
+     name.removeAttribute("class","error")
+     labelEmail.classList.remove("class","recolocacaoLetras")
+     labelNome.classList.remove("class","recolocacaoLetras")
+     labelNome.classList.remove("class","errorLetras")
+     inputBoxNome.classList.remove("class","inputNomeRed")
+     inputBoxNome.removeChild(pNome)
     }
+
+    if (email.value === '' || !checkEmail(email.value)) {
+      email.setAttribute("class","error")
+      labelEmail.classList.add("class","errorLetras")
+      inputBoxEmail.classList.add("class","inputNomeRed")
+      const pEmail = document.createElement("p")
+      pEmail.setAttribute("id","pEmailErro")
+      pEmail.setAttribute("class","errorLetrasP")
+      pEmail.innerHTML = "Adicione um email"
+      inputBoxEmail.appendChild(pEmail)
+      labelNome.classList.add("class","recolocacaoLetras")
+      labelEmail.classList.add("class","recolocacaoLetras")
+    }else{
+      const pEmail = document.getElementById("pEmailErro")
+      email.removeAttribute("class","error")
+      labelEmail.classList.remove("class","recolocacaoLetras")
+      labelNome.classList.remove("class","recolocacaoLetras")
+      labelEmail.classList.remove("class","errorLetras")
+      inputBoxEmail.classList.remove("class","inputNomeRed") 
+      inputBoxEmail.removeChild(pEmail)
+    }
+
+    if(subject.value === ''){
+      subject.setAttribute("class","error")
+      labelAssunto.classList.add("class","errorLetras")
+      inputBoxAssunto.classList.add("class","inputNomeRed")
+      
+    } else{
+      subject.removeAttribute("class","error")
+      labelAssunto.classList.remove("class","errorLetras")
+      inputBoxAssunto.classList.remove("class","inputNomeRed")
+    } 
+
+    if(message.value === ''){
+      message.setAttribute("class","error")
+      labelMensagem.classList.add("class","errorLetras")
+      inputBoxMensagem.classList.add("class","inputNomeRedTextArea")
+    } else{
+      message.removeAttribute("class","error")
+      labelMensagem.classList.remove("class","errorLetras")
+      inputBoxMensagem.classList.remove("class","inputNomeRedTextArea")
+    }
+
+  }else{
+    if(name.value !== '' && email.value !== '' && subject.value !== '' && message.value !== ''){
+      name.removeAttribute("class","error")
+      labelNome.classList.remove("class","errorLetras")
+      inputBoxNome.classList.remove("class","inputNomeRed")
+      email.removeAttribute("class","error")
+      labelEmail.classList.remove("class","errorLetras")
+      inputBoxEmail.classList.remove("class","inputNomeRed")
+      subject.removeAttribute("class","error")
+      labelAssunto.classList.remove("class","errorLetras")
+      inputBoxAssunto.classList.remove("class","inputNomeRed")
+      message.removeAttribute("class","error")
+      labelMensagem.classList.remove("class","errorLetras")
+      inputBoxMensagem.classList.remove("class","inputNomeRedTextArea")
+      name.value = ''
+      email.value = ''
+      subject.value = ''
+      message.value = ''
+    }
+    return true
+  }
+  
 
     function checkEmail(email) {
       return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
@@ -153,6 +233,7 @@ btn.addEventListener('click', function(e){
 }
 })
 
+/* anmição das letras */
 
 let label = document.querySelectorAll('label').
 forEach(label => {

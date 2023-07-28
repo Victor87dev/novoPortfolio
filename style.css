@@ -2635,12 +2635,39 @@ footer h6{
   color: #32e61a;
 }
 
+/* mostrar error no input */
 
+.error{
+  border-bottom: 2px solid red !important;
+}
 
+.errorLetras{
+  color: red !important;
+}
 
+.errorLetrasP{
+  color: red !important;
+  font-size: 13px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
 
+.recolocacaoLetras{
+  bottom: 37px !important;
+}
 
+.someP{
+  display: none !important;
+}
 
+.inputNomeRed input:focus ~ label span,
+.inputNomeRed input:valid ~ label span{
+  color: red !important;
+}
+
+.inputNomeRedTextArea textarea:focus ~ label span,
+.inputNomeRedTextArea textarea:valid ~ label span{
+  color: red !important;
+}
 
 
 
