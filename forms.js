@@ -135,9 +135,13 @@ btn.addEventListener('click', function(e){
         inputBoxNome.classList.add("class","inputNomeRed")
         if(inputBoxNome.children.length <= 2){
           labelNome.classList.add("class","recolocacaoLetras")
-          inputBoxNome.innerHTML += `
-          <p class="errorLetrasP" id="errorNome">Insira algum nome</p>
-          `
+          var pErrorNome = document.createElement("p")
+          pErrorNome.setAttribute("class","errorLetrasP")
+          pErrorNome.setAttribute("id","errorNome")
+          pErrorNome.innerHTML = "Insira um nome"
+          inputBoxNome.appendChild(pErrorNome)
+        }else{
+          pErrorNome.classList.remove("class","someP")
         }
         
     }else{
@@ -145,7 +149,7 @@ btn.addEventListener('click', function(e){
      labelNome.classList.remove("class","errorLetras")
      inputBoxNome.classList.remove("class","inputNomeRed")
      var errorNome = document.getElementById("errorNome")
-     inputBoxNome.removeChild(errorNome)
+     errorNome.classList.add("class","someP")
     }
 
     if (email.value === '' || !checkEmail(email.value)) {
@@ -154,16 +158,20 @@ btn.addEventListener('click', function(e){
       inputBoxEmail.classList.add("class","inputNomeRed")
       if(inputBoxEmail.children.length <= 2){
         labelEmail.classList.add("class","recolocacaoLetras")
-        inputBoxEmail.innerHTML += `
-        <p class="errorLetrasP" id="errorEmail">Insira um email válido</p>
-        `
-      }  
+        var pErrorEmail = document.createElement("p")
+          pErrorEmail.setAttribute("class","errorLetrasP")
+          pErrorEmail.setAttribute("id","errorEmail")
+          pErrorEmail.innerHTML = "Insira um email válido"
+          inputBoxEmail.appendChild(pErrorEmail)
+      }else{
+        pErrorEmail.classList.remove("class","someP")
+      }
     }else{
       email.removeAttribute("class","error")
       labelEmail.classList.remove("class","errorLetras")
       inputBoxEmail.classList.remove("class","inputNomeRed") 
       var errorEmail = document.getElementById("errorEmail")
-      inputBoxEmail.removeChild(errorEmail)
+      errorEmail.classList.add("class","someP")
     }
 
     if(subject.value === ''){
