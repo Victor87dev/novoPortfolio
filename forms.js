@@ -132,15 +132,17 @@ btn.addEventListener('click', function(e){
     if (name.value === '') {
         name.setAttribute("class","error")
         labelNome.classList.add("class","errorLetras")
-        labelNome.classList.add("class","recolocacaoLetras")
         inputBoxNome.classList.add("class","inputNomeRed")
-        inputBoxNome.innerHTML += `
-        <p class="errorLetrasP" id="errorNome">Insira algum nome</p>
-        `
+        if(inputBoxNome.children.length <= 2){
+          labelNome.classList.add("class","recolocacaoLetras")
+          inputBoxNome.innerHTML += `
+          <p class="errorLetrasP" id="errorNome">Insira algum nome</p>
+          `
+        }
+        
     }else{
      name.removeAttribute("class","error")
      labelNome.classList.remove("class","errorLetras")
-     labelNome.classList.remove("class","recolocacaoLetras")
      inputBoxNome.classList.remove("class","inputNomeRed")
      var errorNome = document.getElementById("errorNome")
      inputBoxNome.removeChild(errorNome)
@@ -149,16 +151,16 @@ btn.addEventListener('click', function(e){
     if (email.value === '' || !checkEmail(email.value)) {
       email.setAttribute("class","error")
       labelEmail.classList.add("class","errorLetras")
-      labelEmail.classList.add("class","recolocacaoLetras")
       inputBoxEmail.classList.add("class","inputNomeRed")
-      inputBoxEmail.innerHTML += `
-      <p class="errorLetrasP" id="errorEmail">Insira um email válido</p>
-      `
-      
+      if(inputBoxEmail.children.length <= 2){
+        labelEmail.classList.add("class","recolocacaoLetras")
+        inputBoxEmail.innerHTML += `
+        <p class="errorLetrasP" id="errorEmail">Insira um email válido</p>
+        `
+      }  
     }else{
       email.removeAttribute("class","error")
       labelEmail.classList.remove("class","errorLetras")
-      labelEmail.classList.remove("class","recolocacaoLetras")
       inputBoxEmail.classList.remove("class","inputNomeRed") 
       var errorEmail = document.getElementById("errorEmail")
       inputBoxEmail.removeChild(errorEmail)
@@ -167,11 +169,13 @@ btn.addEventListener('click', function(e){
     if(subject.value === ''){
       subject.setAttribute("class","error")
       labelAssunto.classList.add("class","errorLetras")
-      labelAssunto.classList.add("class","recolocacaoLetras")
       inputBoxAssunto.classList.add("class","inputNomeRed")
-      inputBoxAssunto.innerHTML += `
-      <p class="errorLetrasP" id="errorAssunto">Insira algum Assunto</p>
-      `
+      if(inputBoxAssunto.children.length <= 2){
+        labelAssunto.classList.add("class","recolocacaoLetras")
+        inputBoxAssunto.innerHTML += `
+        <p class="errorLetrasP" id="errorAssunto">Insira algum Assunto</p>
+        `
+      }
       
     } else{
       subject.removeAttribute("class","error")
@@ -186,9 +190,11 @@ btn.addEventListener('click', function(e){
       message.setAttribute("class","error")
       labelMensagem.classList.add("class","errorLetras")
       inputBoxMensagem.classList.add("class","inputNomeRedTextArea")
-      inputBoxMensagem.innerHTML += `
-      <p class="errorLetrasP" id="errorMensagem">Insira alguma mensagem</p>
-      `
+      if(inputBoxMensagem.children.length <= 2){
+        inputBoxMensagem.innerHTML += `
+        <p class="errorLetrasP" id="errorMensagem">Insira alguma mensagem</p>
+        `
+      }
     } else{
       message.removeAttribute("class","error")
       labelMensagem.classList.remove("class","errorLetras")
