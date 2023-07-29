@@ -127,47 +127,74 @@ btn.addEventListener('click', function(e){
 
   function checkInputs() {
   if(name.value === '' || email.value === '' || !checkEmail(email.value) || subject.value === '' || message.value === ''){
-
+   
   
     if (name.value === '') {
-      name.setAttribute("class","error")
-      labelNome.classList.add("class","errorLetras")
-      inputBoxNome.classList.add("class","inputNomeRed")
+        name.setAttribute("class","error")
+        labelNome.classList.add("class","errorLetras")
+        labelNome.classList.add("class","recolocacaoLetras")
+        inputBoxNome.classList.add("class","inputNomeRed")
+        inputBoxNome.innerHTML += `
+        <p class="errorLetrasP" id="errorNome">Insira algum nome</p>
+        `
     }else{
      name.removeAttribute("class","error")
      labelNome.classList.remove("class","errorLetras")
+     labelNome.classList.remove("class","recolocacaoLetras")
      inputBoxNome.classList.remove("class","inputNomeRed")
+     var errorNome = document.getElementById("errorNome")
+     inputBoxNome.removeChild(errorNome)
     }
 
     if (email.value === '' || !checkEmail(email.value)) {
       email.setAttribute("class","error")
       labelEmail.classList.add("class","errorLetras")
+      labelEmail.classList.add("class","recolocacaoLetras")
       inputBoxEmail.classList.add("class","inputNomeRed")
+      inputBoxEmail.innerHTML += `
+      <p class="errorLetrasP" id="errorEmail">Insira um email válido</p>
+      `
+      
     }else{
       email.removeAttribute("class","error")
       labelEmail.classList.remove("class","errorLetras")
+      labelEmail.classList.remove("class","recolocacaoLetras")
       inputBoxEmail.classList.remove("class","inputNomeRed") 
+      var errorEmail = document.getElementById("errorEmail")
+      inputBoxEmail.removeChild(errorEmail)
     }
 
     if(subject.value === ''){
       subject.setAttribute("class","error")
       labelAssunto.classList.add("class","errorLetras")
+      labelAssunto.classList.add("class","recolocacaoLetras")
       inputBoxAssunto.classList.add("class","inputNomeRed")
+      inputBoxAssunto.innerHTML += `
+      <p class="errorLetrasP" id="errorAssunto">Insira algum Assunto</p>
+      `
       
     } else{
       subject.removeAttribute("class","error")
       labelAssunto.classList.remove("class","errorLetras")
+      labelAssunto.classList.remove("class","recolocacaoLetras")
       inputBoxAssunto.classList.remove("class","inputNomeRed")
+      var errorAssunto = document.getElementById("errorAssunto")
+      inputBoxAssunto.removeChild(errorAssunto)
     } 
 
-    if(message.value === ''){
+    if(message.value === ''){ 
       message.setAttribute("class","error")
       labelMensagem.classList.add("class","errorLetras")
       inputBoxMensagem.classList.add("class","inputNomeRedTextArea")
+      inputBoxMensagem.innerHTML += `
+      <p class="errorLetrasP" id="errorMensagem">Insira alguma mensagem</p>
+      `
     } else{
       message.removeAttribute("class","error")
       labelMensagem.classList.remove("class","errorLetras")
       inputBoxMensagem.classList.remove("class","inputNomeRedTextArea")
+      var errorMensagem = document.getElementById("errorMensagem")
+      inputBoxMensagem.removeChild(errorMensagem)
     }
 
   }else{

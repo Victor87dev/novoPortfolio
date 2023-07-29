@@ -2429,6 +2429,7 @@ input, textarea{
   background: transparent;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
 }
 
 #btn_email::before {
