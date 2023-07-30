@@ -151,11 +151,17 @@ btn.addEventListener('click', function(e){
       pErrorNome.setAttribute("id","errorNome")
       pErrorNome.innerHTML = "Insira um nome"
       inputBoxNome.appendChild(pErrorNome)
-    }else if(name.value !== ''){
-      var errorNome = document.getElementById("errorNome")
-      labelNome.classList.remove("class","recolocacaoLetras")
-      errorNome.classList.add("class","someP")
     }
+  }else if(name.value !== ''){
+    var errorNome = document.getElementById("errorNome")
+    labelNome.classList.remove("class","recolocacaoLetras")
+    errorNome.classList.add("class","someP")
+  }
+
+  if(name.value === '' && inputBoxNome.children.length > 2){
+    var errorNome = document.getElementById("errorNome")
+    labelNome.classList.add("class","recolocacaoLetras")
+    errorNome.classList.remove("class","someP")
   }
 
 
@@ -186,11 +192,23 @@ if(email.value === '' || !checkEmail(email.value) ){
       pErrorEmail.setAttribute("id","errorEmail")
       pErrorEmail.innerHTML = "Insira um email válido"
       inputBoxEmail.appendChild(pErrorEmail)
-  }else if(email.value !== '' && checkEmail(email.value)){
-    var errorEmail = document.getElementById("errorEmail")
-    labelEmail.classList.remove("class","recolocacaoLetras")
-    errorEmail.classList.add("class","someP")
   }
+}else if(email.value !== '' && checkEmail(email.value)){
+  var errorEmail = document.getElementById("errorEmail")
+  labelEmail.classList.remove("class","recolocacaoLetras")
+  errorEmail.classList.add("class","someP")
+}
+
+if(email.value === '' && inputBoxEmail.children.length > 2){
+  var errorEmail = document.getElementById("errorEmail")
+  labelEmail.classList.add("class","recolocacaoLetras")
+  errorEmail.classList.remove("class","someP")
+}
+
+if(!checkEmail(email.value) && inputBoxEmail.children.length > 2){
+  var errorEmail = document.getElementById("errorEmail")
+  labelEmail.classList.add("class","recolocacaoLetras")
+  errorEmail.classList.remove("class","someP")
 }
 
 if(email.value !== '' && checkEmail(email.value) && name.value === ''){
@@ -218,13 +236,19 @@ if(email.value !== '' && checkEmail(email.value) && name.value === ''){
         pErrorAssunto.setAttribute("id","errorAssunto")
         pErrorAssunto.innerHTML = "Insira um Assunto"
         inputBoxAssunto.appendChild(pErrorAssunto)
-    }else if(subject.value !== ''){
-      var errorAssunto = document.getElementById("errorAssunto")
-      errorAssunto.classList.add("class","someP")
-      labelAssunto.classList.remove("class","recolocacaoLetras")
     }
+  }else if(subject.value !== ''){
+    var errorAssunto = document.getElementById("errorAssunto")
+    labelAssunto.classList.remove("class","recolocacaoLetras")
+    errorAssunto.classList.add("class","someP")
   }
  
+  if(subject.value === '' && inputBoxAssunto.children.length > 2){
+    var errorAssunto = document.getElementById("errorAssunto")
+    labelAssunto.classList.add("class","recolocacaoLetras")
+    errorAssunto.classList.remove("class","someP")
+  }
+
 
     if(message.value === ''){ 
       message.setAttribute("class","error")
@@ -245,14 +269,17 @@ if(email.value !== '' && checkEmail(email.value) && name.value === ''){
       pErrorMensagem.setAttribute("id","errorMensagem")
       pErrorMensagem.innerHTML = "Insira uma mensagem"
       inputBoxMensagem.appendChild(pErrorMensagem)
-    }else if(message.value !== ''){
-      var errorMensagem = document.getElementById("errorMensagem")
-      errorMensagem.classList.add("class","someP")
     }
+  }else if(message.value !== ''){
+    var errorMensagem = document.getElementById("errorMensagem")
+    errorMensagem.classList.add("class","someP")
+  }
+
+  if(message.value === '' && inputBoxEmail.children.length > 2){
+    var errorMensagem = document.getElementById("errorMensagem")
+    errorMensagem.classList.remove("class","someP")
   }
     
-
-
   }else{
     if(name.value !== '' && email.value !== '' && subject.value !== '' && message.value !== ''){
       name.removeAttribute("class","error")
