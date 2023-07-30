@@ -133,83 +133,125 @@ btn.addEventListener('click', function(e){
         name.setAttribute("class","error")
         labelNome.classList.add("class","errorLetras")
         inputBoxNome.classList.add("class","inputNomeRed")
-        if(inputBoxNome.children.length <= 2){
-          labelNome.classList.add("class","recolocacaoLetras")
-          var pErrorNome = document.createElement("p")
-          pErrorNome.setAttribute("class","errorLetrasP")
-          pErrorNome.setAttribute("id","errorNome")
-          pErrorNome.innerHTML = "Insira um nome"
-          inputBoxNome.appendChild(pErrorNome)
-        }else{
-          pErrorNome.classList.remove("class","someP")
-        }
         
     }else{
      name.removeAttribute("class","error")
      labelNome.classList.remove("class","errorLetras")
      inputBoxNome.classList.remove("class","inputNomeRed")
-     var errorNome = document.getElementById("errorNome")
-     errorNome.classList.add("class","someP")
+     labelNome.classList.remove("class","recolocacaoLetras")
+     
     }
+
+
+  if(name.value === ''){
+    if(inputBoxNome.children.length <= 2){
+      labelNome.classList.add("class","recolocacaoLetras")
+      var pErrorNome = document.createElement("p")
+      pErrorNome.setAttribute("class","errorLetrasP")
+      pErrorNome.setAttribute("id","errorNome")
+      pErrorNome.innerHTML = "Insira um nome"
+      inputBoxNome.appendChild(pErrorNome)
+    }else if(name.value !== ''){
+      var errorNome = document.getElementById("errorNome")
+      labelNome.classList.remove("class","recolocacaoLetras")
+      errorNome.classList.add("class","someP")
+    }
+  }
+
+
+  if(name.value !== '' && email.value === ''){
+     labelNome.classList.add("class","recolocacaoLetras")
+  }else if(name.value !== '' && !checkEmail(email.value)){
+    labelNome.classList.add("class","recolocacaoLetras")
+  }
+
 
     if (email.value === '' || !checkEmail(email.value)) {
       email.setAttribute("class","error")
       labelEmail.classList.add("class","errorLetras")
       inputBoxEmail.classList.add("class","inputNomeRed")
-      if(inputBoxEmail.children.length <= 2){
-        labelEmail.classList.add("class","recolocacaoLetras")
-        var pErrorEmail = document.createElement("p")
-          pErrorEmail.setAttribute("class","errorLetrasP")
-          pErrorEmail.setAttribute("id","errorEmail")
-          pErrorEmail.innerHTML = "Insira um email válido"
-          inputBoxEmail.appendChild(pErrorEmail)
-      }else{
-        pErrorEmail.classList.remove("class","someP")
-      }
+      
     }else{
       email.removeAttribute("class","error")
       labelEmail.classList.remove("class","errorLetras")
       inputBoxEmail.classList.remove("class","inputNomeRed") 
-      var errorEmail = document.getElementById("errorEmail")
-      errorEmail.classList.add("class","someP")
+      labelEmail.classList.remove("class","recolocacaoLetras")
     }
+
+if(email.value === '' || !checkEmail(email.value) ){
+  if(inputBoxEmail.children.length <= 2){
+    labelEmail.classList.add("class","recolocacaoLetras")
+    var pErrorEmail = document.createElement("p")
+      pErrorEmail.setAttribute("class","errorLetrasP")
+      pErrorEmail.setAttribute("id","errorEmail")
+      pErrorEmail.innerHTML = "Insira um email válido"
+      inputBoxEmail.appendChild(pErrorEmail)
+  }else if(email.value !== '' && checkEmail(email.value)){
+    var errorEmail = document.getElementById("errorEmail")
+    labelEmail.classList.remove("class","recolocacaoLetras")
+    errorEmail.classList.add("class","someP")
+  }
+}
+
+if(email.value !== '' && checkEmail(email.value) && name.value === ''){
+  labelEmail.classList.add("class","recolocacaoLetras")
+}
 
     if(subject.value === ''){
       subject.setAttribute("class","error")
       labelAssunto.classList.add("class","errorLetras")
       inputBoxAssunto.classList.add("class","inputNomeRed")
-      if(inputBoxAssunto.children.length <= 2){
-        labelAssunto.classList.add("class","recolocacaoLetras")
-        inputBoxAssunto.innerHTML += `
-        <p class="errorLetrasP" id="errorAssunto">Insira algum Assunto</p>
-        `
-      }
+     
       
     } else{
       subject.removeAttribute("class","error")
       labelAssunto.classList.remove("class","errorLetras")
-      labelAssunto.classList.remove("class","recolocacaoLetras")
       inputBoxAssunto.classList.remove("class","inputNomeRed")
-      var errorAssunto = document.getElementById("errorAssunto")
-      inputBoxAssunto.removeChild(errorAssunto)
+      
     } 
+
+  if(subject.value === ''){
+    if(inputBoxAssunto.children.length <= 2){
+      labelAssunto.classList.add("class","recolocacaoLetras")
+      var pErrorAssunto = document.createElement("p")
+        pErrorAssunto.setAttribute("class","errorLetrasP")
+        pErrorAssunto.setAttribute("id","errorAssunto")
+        pErrorAssunto.innerHTML = "Insira um Assunto"
+        inputBoxAssunto.appendChild(pErrorAssunto)
+    }else if(subject.value !== ''){
+      var errorAssunto = document.getElementById("errorAssunto")
+      errorAssunto.classList.add("class","someP")
+      labelAssunto.classList.remove("class","recolocacaoLetras")
+    }
+  }
+ 
 
     if(message.value === ''){ 
       message.setAttribute("class","error")
       labelMensagem.classList.add("class","errorLetras")
       inputBoxMensagem.classList.add("class","inputNomeRedTextArea")
-      if(inputBoxMensagem.children.length <= 2){
-        inputBoxMensagem.innerHTML += `
-        <p class="errorLetrasP" id="errorMensagem">Insira alguma mensagem</p>
-        `
-      }
+      
     } else{
       message.removeAttribute("class","error")
       labelMensagem.classList.remove("class","errorLetras")
       inputBoxMensagem.classList.remove("class","inputNomeRedTextArea")
-      var errorMensagem = document.getElementById("errorMensagem")
-      inputBoxMensagem.removeChild(errorMensagem)
+      
     }
+
+  if(message.value === ''){
+    if(inputBoxMensagem.children.length <= 2){
+      var pErrorMensagem = document.createElement("p")
+      pErrorMensagem.setAttribute("class","errorLetrasP")
+      pErrorMensagem.setAttribute("id","errorMensagem")
+      pErrorMensagem.innerHTML = "Insira uma mensagem"
+      inputBoxMensagem.appendChild(pErrorMensagem)
+    }else if(message.value !== ''){
+      var errorMensagem = document.getElementById("errorMensagem")
+      errorMensagem.classList.add("class","someP")
+    }
+  }
+    
+
 
   }else{
     if(name.value !== '' && email.value !== '' && subject.value !== '' && message.value !== ''){
@@ -246,15 +288,9 @@ btn.addEventListener('click', function(e){
       boxEmailEnviado.appendChild(buttonVoltar)
       boxEmail.appendChild(boxEmailEnviado)
       buttonVoltar.addEventListener('click',()=>{
-        boxEmail.removeChild(boxEmailEnviado)
         boxForm.classList.remove("class","someP")
+        boxEmail.removeChild(boxEmailEnviado)
       })
-  /*
-  <div class="email_enviado" id="email_enviado">
-     <p class="text_email_enviado">Email enviado com sucesso!</p>
-     <button type="button" class="button_email_enviado" id="button_email_enviado">Voltar</button>
-  </div>
-  */
     }
     return true
   }
