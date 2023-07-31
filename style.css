@@ -2332,7 +2332,7 @@ form{
 
 .inputBox label{
   position: absolute;
-  bottom: 17px;
+  bottom: 40px;
   left: 0;
   padding: 10px 0;
   pointer-events: none;
@@ -2647,17 +2647,13 @@ footer h6{
 }
 
 .errorLetrasP{
+  color: transparent;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.errorLetrasT{
   color: red !important;
-  font-size: 13px !important;
-  font-family: 'Poppins', sans-serif !important;
-}
-
-.recolocacaoLetras{
-  bottom: 37px !important;
-}
-
-.recolocacaoLetrasEs{
-  bottom: 45px !important;
 }
 
 .someP{
