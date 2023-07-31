@@ -51,25 +51,25 @@ const arrayProjects = [
     id:5,
     title: "Projeto Calculadora",
     description: "Projeto feito para melhorar minhas habilidades em Javascript, consiste em uma calculadora simples e funcional, assim que o usuário clickar na setinha a calculadora irá ser apresentada e se desejar guardar novamente é so clickar na setinha novamente, e o mais importante fazer o calculo que desejar, feito com HTML, CSS e Javascript.",
-    deploy_url: "https://projeto-shopgames-sombri.netlify.app/"
+    deploy_url: "https://projeto-calculadora77-js.netlify.app/"
   },
   {
     id:6,
     title: "Projeto Candidatos",
     description: "Projeto feito por conta própria, Nesse projeto pode ser feita a inscrição de candidatos adicionando o nome, idade, experiência e área de atuação, depois de ser adiconado ao campo de candidatos o usuário poderá analisar os candidatos e assim escolher quem desejar contratar, apenas clickando no botao contratar, projeto feito com HTML,CSS e Javascript.",
-    deploy_url: "https://alarme-project-8777.netlify.app/"
+    deploy_url: "https://projeto-contratos-87.netlify.app/"
   },
   {
     id:7,
     title: "Projeto CyberCarros",
-    description: "Projeto realizado para ser apresentado no meu curso, O projeto é uma empresa de aluguéis de veículos de todos os tipos e gostos, nessa empresa o foco é a facilidade do nosso consumidor para encontrar o seu veículo de preferência e por um valor adequado, contamos com categorias de esportivos, executivos, popular e 4X4, Projeto feito com HTML, CSS e Javascript.",
-    deploy_url: "https://projeto-shopgames-sombri.netlify.app/"
+    description: "Projeto realizado para ser apresentado no meu curso, O projeto é uma empresa de aluguéis de veículos de todos os tipos e gostos, nessa empresa o foco é a facilidade do nosso consumidor para encontrar o seu veículo de preferência e por um valor adequado, contamos com categorias de Esportivos, Executivos, Popular e 4X4, Projeto feito com HTML e CSS.",
+    deploy_url: "https://cyber-carros-projeto.netlify.app/"
   },
   {
     id:8,
     title: "Projeto Contador",
     description: "Projeto feito por conta própria, o projeto contador consiste em poder contar a quantidade de números que desejar, tanto números positivos como negativos, apenas clickando no botão de adição ou de subtração, o foco deste projeto é a facilitação para o usuário, projeto feito com HMTL, CSS e Javascript.",
-    deploy_url: "https://projeto-shopgames-sombri.netlify.app/"
+    deploy_url: "https://meu-projeto-contador.netlify.app/"
   },
 ]
 
