@@ -196,8 +196,9 @@ letter-spacing: 0.05rem;
 
 .box-sobreMim h3 {
     font-family: 'Poppins', sans-serif;
-font-size: 30px;
+font-size: 35px;
 text-align: center;
+font-weight: 30;
 }
 
 .home-img{
@@ -441,7 +442,7 @@ text-align: center;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   letter-spacing: 1.5px;
-  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card .content .desc{
@@ -657,7 +658,7 @@ bottom: 50%;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   letter-spacing: 1.5px;
-  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card_2 .content .desc{
@@ -864,7 +865,7 @@ bottom: 50%;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   letter-spacing: 1.5px;
-  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card_3 .content .desc{
@@ -1071,7 +1072,7 @@ bottom: 50%;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   letter-spacing: 1.5px;
-  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card_4 .content .desc{
@@ -1228,8 +1229,8 @@ bottom: 50%;
 
 .card_5:hover{
   background-image: linear-gradient(#000000,#1f1f1f);
-  box-shadow: rgb(0, 0, 0) 0px 1px 12px;
-  border: 2px solid #c5c5c5;
+  box-shadow: rgb(0, 140, 255) 0px 1px 12px;
+  border: 2px solid #0099ff;
 }
 
 .card_5 .img{
@@ -1278,7 +1279,7 @@ bottom: 50%;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   letter-spacing: 1.5px;
-  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card_5 .content .desc{
@@ -1308,8 +1309,8 @@ bottom: 50%;
   
   .card_5:hover .button_card:hover{
   color:#fff;
-  border:2px solid #fff;
-  box-shadow: rgb(255, 255, 255) 0px 1px 12px;
+  border:2px solid #0099ff;
+  box-shadow: rgb(0, 153, 255) 0px 1px 12px;
   transition: 0.5s;
   }
   
@@ -1435,8 +1436,8 @@ bottom: 50%;
 
 .card_6:hover{
   background-image: linear-gradient(#000000,#1f1f1f);
-  box-shadow: rgb(0, 0, 0) 0px 1px 12px;
-  border: 2px solid #c5c5c5;
+  box-shadow: rgb(0, 35, 189) 0px 1px 12px;
+  border: 2px solid #001bb4;
 }
 
 .card_6 .img{
@@ -1485,7 +1486,7 @@ bottom: 50%;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   letter-spacing: 1.5px;
-  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card_6 .content .desc{
@@ -1515,8 +1516,8 @@ bottom: 50%;
   
   .card_6:hover .button_card:hover{
   color:#fff;
-  border:2px solid #fff;
-  box-shadow: rgb(255, 255, 255) 0px 1px 12px;
+  border:2px solid #0029e0;
+  box-shadow: rgb(0, 20, 196) 0px 1px 12px;
   transition: 0.5s;
   }
   
@@ -1642,7 +1643,7 @@ bottom: 50%;
 
 .card_7:hover{
   background-image: linear-gradient(#000000,#1f1f1f);
-  box-shadow: rgb(0, 0, 0) 0px 1px 12px;
+  box-shadow: rgb(255, 255, 255) 0px 1px 12px;
   border: 2px solid #c5c5c5;
 }
 
@@ -1692,7 +1693,7 @@ bottom: 50%;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   letter-spacing: 1.5px;
-  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card_7 .content .desc{
@@ -1849,8 +1850,8 @@ bottom: 50%;
 
 .card_8:hover{
   background-image: linear-gradient(#000000,#1f1f1f);
-  box-shadow: rgb(0, 0, 0) 0px 1px 12px;
-  border: 2px solid #c5c5c5;
+  box-shadow: rgb(85, 0, 182) 0px 1px 12px;
+  border: 2px solid #5f00b8;
 }
 
 .card_8 .img{
@@ -1899,7 +1900,7 @@ bottom: 50%;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   letter-spacing: 1.5px;
-  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card_8 .content .desc{
@@ -1929,8 +1930,8 @@ bottom: 50%;
   
   .card_8:hover .button_card:hover{
   color:#fff;
-  border:2px solid #fff;
-  box-shadow: rgb(255, 255, 255) 0px 1px 12px;
+  border:2px solid #4b00ad;
+  box-shadow: rgb(78, 0, 180) 0px 1px 12px;
   transition: 0.5s;
   }
   
