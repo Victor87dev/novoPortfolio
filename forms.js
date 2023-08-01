@@ -239,16 +239,12 @@ btn.addEventListener('click', function(e){
     return true
   }
   
-    
-
     function checkEmail(email) {
       return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
         email
       )
     }
   }
-
-
 
   if(checkInputs()){
   Email.send({
@@ -269,21 +265,6 @@ forEach(label => {
  ((letters, i) => `<span style="transition-delay: ${i * 50}ms">${letters}</span>`).join('');
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 window.addEventListener('scroll', reveal);
 
 function reveal(){
@@ -302,8 +283,3 @@ function reveal(){
     }
   }
 }
-
-
-
-
-
