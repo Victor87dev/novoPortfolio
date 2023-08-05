@@ -2789,6 +2789,12 @@ footer h6{
 
 /* RESPONSIVIDADE */
 
+@media (max-width: 1850px) and (min-width: 1800px){
+  .text-project-habilidades .habilidades{
+    padding: 0 105px;  
+  }
+}
+
 @media (max-width: 1800px) and (min-width: 1700px){
   .container_project{
     grid-template-columns: 400px 400px;
