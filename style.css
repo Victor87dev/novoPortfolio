@@ -2045,7 +2045,7 @@ bottom: 50%;
   width: 30%;
   padding: 0 0 100px 0;
   height: max-content;
-   border: 1px solid #000; 
+   /* border: 1px solid #000;  */
   margin-top: 80px;
   position: relative;
   display: grid;
@@ -2877,6 +2877,50 @@ footer h6{
   .text-project-habilidades .habilidades{ 
     padding: 0 45px;
   }
-  
 }
 
+@media (max-width: 1400px) and (min-width: 1300px){
+  .container_project{
+    width: 90%;
+    grid-template-columns: 330px 330px;
+    gap: 20px;
+  }
+  .container-habilidades{
+    grid-column-gap: 10px;
+  }
+  .container-habilidades .card_skill{ 
+    width: 140px;
+    height: 155px;
+  }
+  .text-project-habilidades .projetos{
+    padding: 0 0 0 275px;
+  }
+  .text-project-habilidades .habilidades{ 
+    padding: 0 45px;
+  } 
+  .card_2:hover .button_card span:nth-child(2){
+    left: calc(50% - 2px);
+    top: -12px;
+    transform-origin: top;
+  }
+  .card_4:hover .button_card span:nth-child(4){
+    left: calc(50% - 2px);
+    bottom: -12px;
+    transform-origin:  bottom;
+    }
+  .card_3:hover .button_card span:nth-child(2){
+    left: calc(50% - 2px);
+    top: -12px;
+    transform-origin: top;
+  }
+  .card_6:hover .button_card span:nth-child(2){
+    left: calc(50% - 2px);
+    top: -12px;
+    transform-origin: top;
+  }
+  .card_7:hover .button_card span:nth-child(2){
+    left: calc(50% - 2px);
+    top: -12px;
+    transform-origin: top;
+  }
+}
