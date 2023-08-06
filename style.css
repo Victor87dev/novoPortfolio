@@ -2719,14 +2719,11 @@ footer h6{
   border: 2px #32e61a solid;
 }
 
+.habilidades_text2{
+ display: none;
+}
 
-
-
-
-
-
-
-
+/* ANIMAÇÕES */
 
 @keyframes floatImage{
     0%{
@@ -2974,7 +2971,7 @@ footer h6{
     width: 20%;
     grid-column-gap: 10px;
     grid-template-columns: auto;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
   .container-habilidades .card_skill{ 
     width: 125px;
@@ -3023,7 +3020,7 @@ footer h6{
     width: 20%;
     grid-column-gap: 10px;
     grid-template-columns: auto;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
   .container-habilidades .card_skill{ 
     width: 125px;
@@ -3072,7 +3069,7 @@ footer h6{
     width: 20%;
     grid-column-gap: 10px;
     grid-template-columns: auto;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
   .container-habilidades .card_skill{ 
     width: 125px;
@@ -3121,7 +3118,7 @@ footer h6{
     width: 20%;
     grid-column-gap: 10px;
     grid-template-columns: auto;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
   .container-habilidades .card_skill{ 
     width: 125px;
@@ -3161,7 +3158,6 @@ footer h6{
   .projects_habilidades{
     display: flex;
     flex-direction: column;
-    
   }
   .container_project{
     width: 100%;
@@ -3170,14 +3166,19 @@ footer h6{
     justify-content: center;
     align-items: center;
     border: 1px solid #0099ff;
-
+   
   }
+  .text-project-habilidades .habilidades{ 
+    /* border: 1px solid #929292; */
+    display: none;
+    
+  } 
   .container-habilidades{
     width: 100%;
     grid-column-gap: 50px;
     grid-template-columns: auto auto;
     gap: 60px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
   .container-habilidades .card_skill{ 
     width: 125px;
@@ -3192,15 +3193,12 @@ footer h6{
     /* border: 1px solid green; */
   }
   .text-project-habilidades .projetos{
-   border: 1px solid #106d04;
+   /* border: 1px solid #106d04; */
    padding: 0;
    width: 100%;
+   display: flex;
   }
-  .text-project-habilidades .habilidades{ 
-    border: 1px solid #929292;
-    padding: 0;
-    width: 100%;
-  } 
+
   .card_2:hover .button_card span:nth-child(2){
     left: calc(50% - 2px);
     top: -12px;
@@ -3221,4 +3219,19 @@ footer h6{
     top: -12px;
     transform-origin: top;
   }
+
+  .habilidades_text2{
+    display: flex;
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  .habilidades_text2 h5{
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    color: #32e61a;
+  }
+
 }
