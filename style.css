@@ -4393,7 +4393,7 @@ footer h6{
 }
 
 
-@media (max-width: 650px) and (min-width: 500px){
+@media (max-width: 650px) and (min-width: 550px){
   .header{
     flex-direction: column;
     text-align: center;
@@ -4603,6 +4603,236 @@ footer h6{
    margin-top: 110px;
    height: 30em;
    min-width: 28em;
+  }
+
+}
+
+
+@media (max-width: 550px) and (min-width: 400px){
+  .header{
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .text1{
+    display: none;
+  }
+  .header .text1Mobile{
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 550;
+    font-family: 'Inter', sans-serif;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    max-width: 550px;
+    margin-top: 10px;
+  }
+  .header img{
+   /* border: 1px solid red;  */
+    height: 25em;
+    }
+   .container{
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-top: 180px;
+    
+   } 
+    .container .text{
+    position: relative;
+    color: #32e61a;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Belanosima', sans-serif;
+    
+    }
+    .container h2{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    }
+    .box-sobreMim{
+      flex-direction: column;
+      }
+    .text2{
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      line-height: 2rem;
+      letter-spacing: 0.05rem;
+      max-width: 570px;
+      margin-top: 70px;
+      font-weight: 550;
+    }
+
+    .sobreMim h3{
+      display: none;
+    }
+
+    h3 .sobreMimText{
+      display: none;
+    }
+
+    .box_text_mobile{
+      display: flex;
+    }
+
+    .box_text_mobile h3{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 45px;
+      text-align: center;
+      font-weight: 30;
+      color: #fff;
+    }
+
+    .sobreMimTextMobile{
+      color: #32e61a;
+    }
+    
+    .home-img{
+      
+      text-align: center;
+      margin-top: 50px;
+      width: 370px;
+      height: 370px;
+      animation: floatImage 4s ease-in-out infinite;
+      animation-delay: 3.1s; 
+      /* border: 1px solid red; */ 
+      
+  }
+  .home-img .glowing-circle::after{
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: #1a2b3c;
+    border-radius: 50%;
+ }
+ .image img{
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  max-width: 350px;
+  object-fit: cover; 
+}
+ .glowing-circle .image{
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+  .projects_habilidades{
+    display: flex;
+    flex-direction: column;
+  }
+  .container_project{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+  }
+
+  .box_mostrar{
+    align-self: center;
+  }
+
+  .box_mostrar_menos{
+    align-self: center;
+  }
+
+  .text-project-habilidades .habilidades{ 
+    /* border: 1px solid #929292; */
+    display: none;
+    
+  } 
+  .container-habilidades{
+    width: 100%;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+    gap: 60px;
+    /* border: 1px solid #000; */
+  }
+  .container-habilidades .card_skill{ 
+    width: 125px;
+    height: 135px;
+  }
+  .text-project-habilidades, h4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    /* border: 1px solid green; */
+  }
+  .text-project-habilidades .projetos{
+   /* border: 1px solid #106d04; */
+   padding: 0;
+   width: 100%;
+   display: flex;
+  }
+
+  .card_2:hover .button_card span:nth-child(2){
+    left: calc(50% - 2px);
+    top: -12px;
+    transform-origin: top;
+  }
+  .card_3:hover .button_card span:nth-child(2){
+    left: calc(50% - 2px);
+    top: -12px;
+    transform-origin: top;
+  }
+  .card_6:hover .button_card span:nth-child(2){
+    left: calc(50% - 2px);
+    top: -12px;
+    transform-origin: top;
+  }
+  .card_7:hover .button_card span:nth-child(2){
+    left: calc(50% - 2px);
+    top: -12px;
+    transform-origin: top;
+  }
+
+  .habilidades_text2{
+    display: flex;
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  .habilidades_text2 h5{
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    color: #32e61a;
+  }
+  .contatos_redes{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form{
+    width: 385px;
+  }
+
+  .box_redes{
+   margin-top: 110px;
+   height: 30em;
+   min-width: 16em;
+   
+  }
+
+  .box_location{
+    margin-right: -40px;
+  }
+
+  .box_redes p{
+   font-size: 14px;
   }
 
 }
