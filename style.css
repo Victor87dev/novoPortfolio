@@ -4882,13 +4882,14 @@ footer h6{
   } 
   .container-habilidades{
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+    gap: 60px;
     /* border: 1px solid #000; */
   }
   .container-habilidades .card_skill{ 
-    width: 150px;
-    height: 170px;
+    width: 125px;
+    height: 135px;
   }
   .text-project-habilidades, h4{
     display: flex;
@@ -5136,13 +5137,13 @@ footer h6{
   } 
   .container-habilidades{
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 125px 125px;
+    gap: 25px;
     /* border: 1px solid #000; */
   }
   .container-habilidades .card_skill{ 
-    width: 150px;
-    height: 170px;
+    width: 125px;
+    height: 135px;
   }
   .text-project-habilidades, h4{
     display: flex;
@@ -5260,6 +5261,10 @@ footer h6{
     margin-top: 20px;
     margin-right: 55px;
     border-radius: 5px;
+  }
+
+  .box_aguardo_contato h6{
+    font-size: 14px;
   }
 }
 
