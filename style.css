@@ -85,10 +85,16 @@ background: #32e61a;
 transition: .4s;
 }
 
-/*estudar toggle*/
-
 nav a:hover::before{
 width: 100%;
+}
+
+.mobile_menu_icon{
+  display: none;
+}
+
+.mobile_menu{
+  display: none;
 }
 
 .header{
@@ -4653,6 +4659,9 @@ footer h6{
 
 
 @media (max-width: 550px) and (min-width: 400px){
+  h1{
+    font-size: 15px;
+  }
   .header{
     flex-direction: column;
     text-align: center;
@@ -4889,6 +4898,9 @@ footer h6{
 
 
 @media (max-width: 400px) and (min-width: 300px){
+  h1{
+    font-size: 12px;
+  }
   .header{
     flex-direction: column;
     text-align: center;
@@ -5151,5 +5163,61 @@ footer h6{
     color: #32e61a;
     letter-spacing: 4px;
   }
+
+}
+
+@media screen and (max-width: 800px){
+  nav{
+    padding: 1.5rem 4rem;
+  }
+
+  nav .nav-item{
+    display: none;
+  }
+
+  .mobile_menu_icon{
+    display: block;
+    
+  }
+
+  .mobile_menu_icon button{ 
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .mobile_menu_icon button i{ 
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .mobile_menu a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #32e61a;
+    border-top: 1px solid #bdbdbd;
+  }
+
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-right: 67px;
+    border-radius: 5px;
+  }
+
+  .mobile_menu .nav-item{
+    display: block;
+    padding-top: 1.2rem;
+  }
+  
+  .open{
+    display: block;
+  }
+
+
+
+  
 
 }
