@@ -4882,14 +4882,13 @@ footer h6{
   } 
   .container-habilidades{
     width: 100%;
-    grid-column-gap: 50px;
-    grid-template-columns: auto auto;
-    gap: 60px;
+    display: flex;
+    flex-direction: column;
     /* border: 1px solid #000; */
   }
   .container-habilidades .card_skill{ 
-    width: 125px;
-    height: 135px;
+    width: 150px;
+    height: 170px;
   }
   .text-project-habilidades, h4{
     display: flex;
