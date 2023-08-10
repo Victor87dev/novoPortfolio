@@ -52,6 +52,10 @@ align-items: center;
 margin-top: 50px;
 }
 
+.h1_mobile{
+  display: none;
+}
+
 h1{
 font-size: 25px;
 color: #fff;
@@ -4022,6 +4026,7 @@ footer h6{
 }
 
 @media (max-width: 850px) and (min-width: 700px){
+ 
   .header{
     flex-direction: column;
     text-align: center;
@@ -4228,7 +4233,49 @@ footer h6{
    height: 30em;
    min-width: 40em;
   }
+  
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 190px;
+    border-radius: 5px;
+  }
 
+}
+
+@media (max-width: 800px) and (min-width: 750px){
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 170px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 700px){
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 150px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 700px) {
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 150px;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 700px) and (min-width: 650px){
@@ -4439,7 +4486,18 @@ footer h6{
    min-width: 40em;
   }
 
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 150px;
+    border-radius: 5px;
+  }
+
 }
+
+
 
 
 @media (max-width: 650px) and (min-width: 550px){
@@ -4655,13 +4713,30 @@ footer h6{
    min-width: 28em;
   }
 
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 130px;
+    border-radius: 5px;
+  }
+
+}
+
+@media (max-width: 600px) and (min-width: 550px){
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 110px;
+    border-radius: 5px;
+  }
 }
 
 
 @media (max-width: 550px) and (min-width: 400px){
-  h1{
-    font-size: 15px;
-  }
   .header{
     flex-direction: column;
     text-align: center;
@@ -4894,13 +4969,28 @@ footer h6{
     margin-left: -70px;
   }
 
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 90px;
+    border-radius: 5px;
+  }
 }
 
+@media (max-width: 450px) and (min-width: 400px){
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 70px;
+    border-radius: 5px;
+  }
+}
 
 @media (max-width: 400px) and (min-width: 300px){
-  h1{
-    font-size: 12px;
-  }
   .header{
     flex-direction: column;
     text-align: center;
@@ -5164,11 +5254,39 @@ footer h6{
     letter-spacing: 4px;
   }
 
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 55px;
+    border-radius: 5px;
+  }
 }
 
-@media screen and (max-width: 800px){
-  nav{
-    padding: 1.5rem 4rem;
+@media (max-width: 350px) and (min-width: 300px){
+  .mobile_menu{
+    align-self: flex-end;
+    background: transparent;
+    width: 35%;
+    margin-top: 20px;
+    margin-right: 40px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 850px){
+  
+  h1{
+    display: none;
+  }
+  .h1_mobile{
+    display: flex;
+  }
+  header{
+    display: flex;
+    justify-content: space-around;
+    gap: 170px;
   }
 
   nav .nav-item{
@@ -5186,7 +5304,7 @@ footer h6{
   }
 
   .mobile_menu_icon button i{ 
-    font-size: 17px;
+    font-size: 22px;
     color: #fff;
   }
 
@@ -5199,14 +5317,6 @@ footer h6{
     border-top: 1px solid #bdbdbd;
   }
 
-  .mobile_menu{
-    align-self: flex-end;
-    background: transparent;
-    width: 30%;
-    margin-right: 67px;
-    border-radius: 5px;
-  }
-
   .mobile_menu .nav-item{
     display: block;
     padding-top: 1.2rem;
@@ -5215,9 +5325,5 @@ footer h6{
   .open{
     display: block;
   }
-
-
-
   
-
 }
