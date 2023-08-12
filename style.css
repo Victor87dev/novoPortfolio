@@ -4829,13 +4829,12 @@ footer h6{
     .sobreMimTextMobile{
       color: #32e61a;
     }
-    
     .home-img{
       
       text-align: center;
       margin-top: 50px;
-      width: 295px;
-      height: 295px;
+      width: 235px;
+      height: 235px;
       animation: floatImage 4s ease-in-out infinite;
       animation-delay: 3.1s; 
       /* border: 1px solid red; */ 
@@ -4844,22 +4843,22 @@ footer h6{
   .home-img .glowing-circle::after{
     content: "";
     position: absolute;
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
     background: #1a2b3c;
     border-radius: 50%;
  }
  .image img{
   position: absolute;
-  top: -18px;
-  left: -30px;
-  max-width: 350px;
+  top: 10px;
+  left: 0px;
+  max-width: 220px;
   object-fit: cover; 
 }
  .glowing-circle .image{
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   z-index: 1;
   overflow: hidden;
