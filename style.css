@@ -5122,6 +5122,38 @@ footer h6{
     color: #32e61a;
   }
 
+  .card .content .desc{
+    font-size: 13px;
+  }
+
+  .card_2 .content .desc{
+    font-size: 12.5px;
+  }
+
+  .card_3 .content .desc{
+    font-size: 12.5px;
+  }
+
+  .card_4 .content .desc{
+    font-size: 13px;
+  }
+
+  .card_5 .content .desc{
+    font-size: 12.1px;
+  }
+
+  .card_6 .content .desc{
+    font-size: 11px;
+  }
+
+  .card_7 .content .desc{
+    font-size: 11.7px;
+  }
+
+  .card_8 .content .desc{
+    font-size: 12.5px;
+  }
+
   #box_contatos{
     padding: 100px 0 0 0;
   }
