@@ -5082,7 +5082,7 @@ footer h6{
 
   .inputBox label{
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     left: 0;
     padding: 10px 0;
     pointer-events: none;
