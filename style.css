@@ -4743,6 +4743,8 @@ footer h6{
 
 
 @media (max-width: 550px) and (min-width: 400px){
+
+  
   .header{
     flex-direction: column;
     text-align: center;
@@ -4965,6 +4967,7 @@ footer h6{
 
   .box_location{
     margin-right: -40px;
+    
   }
 
   .box_redes p{
@@ -5356,16 +5359,19 @@ footer h6{
 
   .box_mostrar{
     width: 15rem;
+    
   }
 
   .box_mostrar_menos{
     width: 15rem;
+    
   }
 
   body{
     overflow-x: hidden;
   }
   
-  
-
+  .header img{
+    height: 18rem;
+  }
 }
