@@ -4277,9 +4277,9 @@ footer h6{
   .mobile_menu{
     align-self: flex-end;
     background: transparent;
-    width: 30%;
+    width: 25%;
     margin-top: 20px;
-    margin-right: 150px;
+    margin-right: 120px;
     border-radius: 5px;
   }
 }
@@ -4497,7 +4497,7 @@ footer h6{
     background: transparent;
     width: 30%;
     margin-top: 20px;
-    margin-right: 150px;
+    margin-right: 120px;
     border-radius: 5px;
   }
 
@@ -5022,23 +5022,17 @@ footer h6{
     font-size: 14px;
   }
 
-}
-
-
-
-@media (max-width: 350px) and (min-width: 300px){
-  .mobile_menu{
-    align-self: flex-end;
-    background: transparent;
-    width: 35%;
-    margin-top: 20px;
-    margin-right: 40px;
-    border-radius: 5px;
+  .text_email_enviado{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #32e61a;
   }
 
 }
 
+
 @media (max-width: 400px) and (min-width: 300px){
+ 
   .header{
     flex-direction: column;
     text-align: center;
@@ -5059,8 +5053,8 @@ footer h6{
   }
   .header img{
    /* border: 1px solid red;  */
-    height: 25em;
-    }
+   width: 20rem;
+  }
    .container{
     text-align: center;
     /* border: 1px solid red; */
@@ -5115,7 +5109,7 @@ footer h6{
       gap: 14px;
       margin-bottom: 50px;
       font-family: 'Poppins', sans-serif;
-      font-size: 45px;
+      font-size: 33px;
       text-align: center;
       font-weight: 30;
       color: #fff;
@@ -5129,8 +5123,8 @@ footer h6{
       
       text-align: center;
       margin-top: 50px;
-      width: 295px;
-      height: 295px;
+      width: 235px;
+      height: 235px;
       animation: floatImage 4s ease-in-out infinite;
       animation-delay: 3.1s; 
       /* border: 1px solid red; */ 
@@ -5139,22 +5133,22 @@ footer h6{
   .home-img .glowing-circle::after{
     content: "";
     position: absolute;
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
     background: #1a2b3c;
     border-radius: 50%;
  }
  .image img{
   position: absolute;
-  top: -18px;
-  left: -30px;
-  max-width: 350px;
+  top: 10px;
+  left: 0px;
+  max-width: 220px;
   object-fit: cover; 
 }
  .glowing-circle .image{
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   z-index: 1;
   overflow: hidden;
@@ -5185,10 +5179,11 @@ footer h6{
     
   } 
   .container-habilidades{
-    width: 100%;
-    grid-template-columns: 125px 125px;
-    gap: 25px;
-    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+     /* border: 1px solid #000;  */
+     width: 135px;
   }
   .container-habilidades .card_skill{ 
     width: 125px;
@@ -5250,14 +5245,14 @@ footer h6{
   }
 
   form{
-    width: 330px; 
+    width: 260px; 
     /* border: 1px solid red; */
   }
 
   .box_redes{
    margin-top: 110px;
    height: 30em;
-   min-width: 14em;
+   min-width: 16em;
    /* border: 1px solid red; */
   }
 
@@ -5317,10 +5312,19 @@ footer h6{
     font-size: 14px;
   }
 
-  footer{
-    width: 28rem;
+  footer h6{
+    font-size: 14px;
   }
 
+  .icons_box{
+    font-size: 20px;
+  }
+
+  .text_email_enviado{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #32e61a;
+  }
 }
 
 @media screen and (max-width: 850px){
