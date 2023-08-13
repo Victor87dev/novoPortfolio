@@ -191,7 +191,7 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
  /* border: 1px solid red;  */
-margin-top: 50px;
+margin-top: -280px;
 padding: 100px 0;
 }
 
@@ -2950,6 +2950,18 @@ footer h6{
   #box_contatos{
     padding: 100px 0 0 0;
   }
+
+  .box-sobreMim{
+    margin-top: -350px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 1500px) and (min-width: 1400px){
@@ -2988,6 +3000,18 @@ footer h6{
 
   #box_contatos{
     padding: 100px 0 0 0;
+  }
+
+  .box-sobreMim{
+    margin-top: -350px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
   }
   
 }
@@ -3103,6 +3127,18 @@ footer h6{
 
   #box_contatos{
     padding: 100px 0 0 0;
+  }
+
+  .box-sobreMim{
+    margin-top: -350px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
   }
 }
 
@@ -3225,6 +3261,18 @@ footer h6{
   
   #box_contatos{
     padding: 130px 0 0 0;
+  }
+
+  .box-sobreMim{
+    margin-top: -350px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
   }
 }
 
@@ -3387,6 +3435,18 @@ footer h6{
   #sobreMim{
     padding: 180px 0 0 0;
   }
+
+  .box-sobreMim{
+    margin-top: -350px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
+  }
   
 }
 
@@ -3546,6 +3606,17 @@ footer h6{
     padding: 145px 0 0 0;
   }
   
+  .box-sobreMim{
+    margin-top: -350px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 1000px) and (min-width: 950px){
@@ -3729,6 +3800,18 @@ footer h6{
 
   #sobreMim{
     padding: 145px 0 0 0;
+  }
+
+  .box-sobreMim{
+    margin-top: -50px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
   }
 }
 
@@ -3914,6 +3997,18 @@ footer h6{
   #sobreMim{
     padding: 130px 0 0 0;
   }
+
+  .box-sobreMim{
+    margin-top: -50px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 900px) and (min-width: 850px){
@@ -4097,6 +4192,18 @@ footer h6{
 
   #sobreMim{
     padding: 165px 0 0 0;
+  }
+
+  .box-sobreMim{
+    margin-top: -50px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
   }
 }
 
@@ -5500,7 +5607,7 @@ footer h6{
   }
 
   #box_contatos{
-    padding: 100px 0 0 0;
+    padding: 30px 0 0 0;
   }
 
   #sobreMim{
@@ -5588,6 +5695,31 @@ footer h6{
     height: 21rem;
   }
 
+  .box-sobreMim{
+    margin-top: -50px;
+  }
+
+  .container-projects-column{
+    margin-top: -40px;
+  }
+
+  .box_contatos{
+    margin-top: 10px;
+  }
+
+  
+
 }
 
+
+@media screen and (max-width: 1200px){
+  footer{
+    height: 10rem;
+  }
+
+  footer h6{
+    margin-top: 70px;
+  }
+
+}
 
