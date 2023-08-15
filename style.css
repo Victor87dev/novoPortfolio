@@ -5619,6 +5619,10 @@ footer h6{
    border: #32e61a;
   }
 
+  a:hover i{
+    color: #fff;
+  }
+
   ul li{
     border-radius: 50px;
   }
