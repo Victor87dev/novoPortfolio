@@ -3123,9 +3123,6 @@ footer h6{
    height: 30em;
    min-width: 40em;
   }
-  .header{
-    height: 600px;
-  }
   .box_mostrar{
     width: 43rem;
   }
@@ -3136,9 +3133,8 @@ footer h6{
   #box_contatos{
     padding: 50px 0 0 0;
   }
-
   .box-sobreMim{
-    margin-top: -350px;
+    margin-top: -500px;
   }
 
   .container-projects-column{
@@ -3256,9 +3252,6 @@ footer h6{
    height: 30em;
    min-width: 40em;
   }
-  .header{
-    height: 600px;
-  }
   .box_mostrar{
     width: 43rem;
   }
@@ -3271,7 +3264,7 @@ footer h6{
   }
 
   .box-sobreMim{
-    margin-top: -350px;
+    margin-top: -500px;
   }
 
   .container-projects-column{
