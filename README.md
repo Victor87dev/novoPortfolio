@@ -55,3 +55,7 @@ Para executar o projeto em sua máquina local, siga as instruções abaixo:
    ```
    npm run dev
    ```
+   
+### Acesse o projeto e utilize da forma que desejar, disponível para todas as telas e dispositivos
+   
+# Obrigado por visitar o projeto! 💚 
